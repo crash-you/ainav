@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="viggo" />
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <title>AINAV.ART - AI网址导航</title>
+    <meta name="keywords" content="AI,人工智能,AI工具,AI导航,网址导航,AI资源,ChatGPT,AI绘画,AIGC,AI写作,大语言模型,LLM,AI应用,AI开发,AI学习,www.ainav.art">
+    <meta name="description" content="AINAV.ART - 收集国内外优秀AI网站、人工智能工具、AI模型和资源网站，定时更新分享优质AI应用和工具。www.ainav.art">
+    
+    <!-- 多语言版本链接 - 告诉搜索引擎不同语言版本的关系 -->
+    <link rel="alternate" hreflang="zh" href="https://www.ainav.art/cn/index.html" />
+    <link rel="alternate" hreflang="en" href="https://www.ainav.art/en/index.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.ainav.art/" />
+    
+    <!-- FB Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://www.ainav.art/">
+    <meta property="og:title" content="AINAV.ART - 收集国内外优秀AI网站、人工智能工具、AI模型和资源网站，定时更新分享优质AI应用和工具。www.ainav.art">
+    <meta property="og:description" content="AI,人工智能,AI工具,AI导航,网址导航,AI资源,ChatGPT,AI绘画,AIGC,AI写作,大语言模型,LLM,AI应用,AI开发,AI学习,www.ainav.art">
+    <meta property="og:image" content="http://www.ainav.art/assets/images/ainav_banner.png">
+    <meta property="og:site_name" content="AINAV.ART - 收集国内外优秀AI网站、人工智能工具、AI模型和资源网站，定时更新分享优质AI应用和工具。www.ainav.art">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AINAV.ART - 收集国内外优秀AI网站、人工智能工具、AI模型和资源网站，定时更新分享优质AI应用和工具。www.ainav.art">
+    <meta name="twitter:description" content="AI,人工智能,AI工具,AI导航,网址导航,AI资源,ChatGPT,AI绘画,AIGC,AI写作,大语言模型,LLM,AI应用,AI开发,AI学习,www.ainav.art">
+    <meta name="twitter:image" content="http://www.ainav.art/assets/images/ainav_banner.png">
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?c05bb16ea908292af9f6c513087a1cc3";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-8550836177608334",
+            enable_page_level_ads: true
+        });
+    </script>
+    
+    <!-- 语言检测与优雅的重定向脚本 - 客户端功能，不会影响SEO -->
+    <script>
+        // 检测浏览器语言
+        function getBrowserLanguage() {
+            if (navigator.languages && navigator.languages.length) {
+                return navigator.languages[0];
+            } else {
+                return navigator.language || navigator.userLanguage || navigator.browserLanguage || 'en';
+            }
+        }
+        
+        // 仅当用户直接访问主页时进行重定向
+        // 搜索引擎会忽略此JavaScript重定向，而是抓取此页面的内容
+        var language = getBrowserLanguage().toLowerCase();
+        var isDirectAccess = document.referrer === '';
+        
+        if (isDirectAccess) {
+            if (language.indexOf('zh') > -1) {
+                window.location.href = './cn/index.html';
+            } else {
+                window.location.href = './en/index.html';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 为SEO添加基本内容，确保搜索引擎可以索引 -->
+    <div class="container">
+        <header>
+            <h1>AINAV.ART - AI网址导航</h1>
+            <p>收集国内外优秀AI网站、人工智能工具、AI模型和资源网站，定时更新分享优质AI应用和工具</p>
+        </header>
+        
+        <!-- 语言选择 -->
+        <div class="language-select">
+            <a href="./cn/index.html" hreflang="zh">中文版</a> | 
+            <a href="./en/index.html" hreflang="en">English Version</a>
+        </div>
+        
+        <!-- 网站简介 -->
+        <section class="introduction">
+            <p>AINAV是一个专为AI爱好者和从业者打造的网址导航，收集了优质的AI工具、模型和资源。请选择您偏好的语言版本继续浏览。</p>
+            <p>AINAV is a website navigation designed for AI enthusiasts and professionals, collecting quality AI tools, models, and resources. Please select your preferred language version to continue browsing.</p>
+        </section>
+    </div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111463289-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111463289-1');
+    </script>
+</body>
+
+</html>
