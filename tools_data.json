@@ -1,0 +1,67 @@
+[
+  {
+    "name": "ChatGPT",
+    "slug": "chatgpt",
+    "url": "https://chat.openai.com/",
+    "logo": "chatgpt.png",
+    "category": "AI写作",
+    "description_cn": "通用对话与写作助手",
+    "description_en": "General-purpose assistant for brainstorming and writing",
+    "detailed_description_cn": "ChatGPT是由OpenAI开发的大型语言模型，基于GPT（Generative Pre-trained Transformer）架构。它能够进行自然语言对话，回答问题，协助写作，编程，翻译，总结文本等多种任务。ChatGPT通过大量文本数据训练，具备强大的语言理解和生成能力，是目前最受欢迎的AI助手之一。",
+    "detailed_description_en": "ChatGPT is a large language model developed by OpenAI, based on the GPT (Generative Pre-trained Transformer) architecture. It can engage in natural language conversations, answer questions, assist with writing, programming, translation, text summarization, and many other tasks.",
+    "pricing": "免费版 + 付费订阅",
+    "pricing_en": "Free + Paid Subscription"
+  },
+  {
+    "name": "Midjourney",
+    "slug": "midjourney",
+    "url": "https://www.midjourney.com/",
+    "logo": "midjourney.png",
+    "category": "AI绘画",
+    "description_cn": "高质量文生图与风格化创作",
+    "description_en": "High-quality text-to-image and stylized creation",
+    "detailed_description_cn": "Midjourney是一款领先的AI图像生成工具，专注于创造高质量、艺术性强的图像。通过简单的文字描述，Midjourney能够生成令人惊叹的艺术作品、插画、概念设计等。该工具以其独特的艺术风格和出色的图像质量而闻名，是艺术家、设计师和创意工作者的首选AI绘画工具。",
+    "detailed_description_en": "Midjourney is a leading AI image generation tool that focuses on creating high-quality, artistic images. Through simple text descriptions, Midjourney can generate stunning artwork, illustrations, concept designs, and more.",
+    "pricing": "付费订阅",
+    "pricing_en": "Paid Subscription"
+  },
+  {
+    "name": "Claude",
+    "slug": "claude",
+    "url": "https://claude.ai/",
+    "logo": "claude.png",
+    "category": "AI写作",
+    "description_cn": "长文理解与方案撰写见长",
+    "description_en": "Great at long-form understanding and drafting",
+    "detailed_description_cn": "Claude是由Anthropic开发的AI助手，以其出色的长文本理解能力和高质量的内容生成而著称。Claude在处理复杂文档、深度分析、创意写作等方面表现优异，特别适合需要深度思考和详细分析的任务。",
+    "detailed_description_en": "Claude is an AI assistant developed by Anthropic, known for its excellent long-text understanding capabilities and high-quality content generation. Claude excels at handling complex documents, in-depth analysis, and creative writing.",
+    "pricing": "免费版 + 付费订阅",
+    "pricing_en": "Free + Paid Subscription"
+  },
+  {
+    "name": "DALL-E",
+    "slug": "dall-e",
+    "url": "https://openai.com/dall-e/",
+    "logo": "DALL-E.png",
+    "category": "AI绘画",
+    "description_cn": "生成高质量的图像，基于文本描述",
+    "description_en": "Generates high-quality images based on text descriptions",
+    "detailed_description_cn": "DALL-E是OpenAI开发的AI图像生成模型，能够根据文本描述创建原创、逼真的图像和艺术作品。DALL-E可以理解复杂的概念组合，生成从未存在过的图像，是创意工作者和设计师的强大工具。",
+    "detailed_description_en": "DALL-E is an AI image generation model developed by OpenAI that can create original, realistic images and art from text descriptions. DALL-E can understand complex concept combinations and generate images that have never existed before.",
+    "pricing": "付费使用",
+    "pricing_en": "Pay-per-use"
+  },
+  {
+    "name": "Stable Diffusion",
+    "slug": "stable-diffusion",
+    "url": "https://stability.ai/",
+    "logo": "stable-diffusion.png",
+    "category": "AI绘画",
+    "description_cn": "开源文生图生态（SDXL/SD3）",
+    "description_en": "Open-source T2I ecosystem (SDXL/SD3)",
+    "detailed_description_cn": "Stable Diffusion是一个开源的文本到图像生成模型，由Stability AI开发。它提供了强大的图像生成能力，支持多种风格和用途，从艺术创作到商业设计都能胜任。作为开源项目，它拥有活跃的社区和丰富的扩展功能。",
+    "detailed_description_en": "Stable Diffusion is an open-source text-to-image generation model developed by Stability AI. It provides powerful image generation capabilities, supporting various styles and uses, from artistic creation to commercial design.",
+    "pricing": "开源免费",
+    "pricing_en": "Open Source Free"
+  }
+]

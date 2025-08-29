@@ -274,3 +274,12 @@ https://www.midjourney.com/
 https://stability.ai/
 https://www.perplexity.ai/
 https://huggingface.co
+
+六、更新日志（2025-08-08）
+- 内容：
+  - 更新 `AICreate`：新增2024-2025热门AI创作工具（Midjourney、Stable Diffusion/SDXL、Ideogram、Adobe Firefly、Leonardo、Playground、Flux.1、Krea、Suno、Udio、ElevenLabs、Stable Audio、Pika、Luma Dream Machine、Sora、HeyGen、CapCut 等）。
+  - 更新 `AIGlobal`：补充权威资讯源（OpenAI、DeepMind、Anthropic、Meta AI、NVIDIA、Hugging Face、Papers with Code、arXiv、The Decoder、The Verge、机器之心、澎湃精选）。
+  - 更新 `ofenAI`：新增“快速导航”分区，便于高频跳转。
+- 说明：
+  - 本次为静态内容更新，未改动样式与脚本；后续可考虑升级前端依赖（Bootstrap/jQuery）与资源懒加载库。
+  - 英文版页面如需同步，请在 `en/` 对应页面增补等价内容并校对外链。
