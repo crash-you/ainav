@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI新闻资讯 - 人工智能行业最新动态和趋势 | AINAV.ART</title>
+    <meta name="description" content="AI新闻资讯 - 提供人工智能行业最新动态、技术突破、产品发布和趋势分析。涵盖ChatGPT、Midjourney等热门AI工具的最新更新和行业深度报道。">
+    <meta name="keywords" content="AI新闻,人工智能资讯,AI行业动态,AI技术新闻,ChatGPT新闻,Midjourney更新,AI产品发布,人工智能趋势,AI技术突破,机器学习新闻,深度学习资讯,AI创业新闻">
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AI新闻资讯 - 人工智能行业最新动态和趋势">
+    <meta property="og:description" content="提供人工智能行业最新动态、技术突破、产品发布和趋势分析，紧跟AI发展脉搏。">
+    <meta property="og:url" content="https://www.ainav.art/news.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.ainav.art/assets/images/AInavLogo.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI新闻资讯 - 人工智能行业最新动态和趋势">
+    <meta name="twitter:description" content="提供人工智能行业最新动态、技术突破、产品发布和趋势分析。">
+    <meta name="twitter:image" content="https://www.ainav.art/assets/images/AInavLogo.png">
+    <meta name="twitter:site" content="@AINAV_ART">
+    
+    <!-- 结构化数据 - NewsArticle -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "AI新闻资讯",
+      "description": "人工智能行业最新动态、技术突破和趋势分析",
+      "url": "https://www.ainav.art/news.html",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "AI新闻列表",
+        "itemListElement": [
+          {
+            "@type": "NewsArticle",
+            "headline": "ChatGPT-4o发布：多模态能力全面升级",
+            "datePublished": "2025-01-27T10:00:00+08:00",
+            "author": {
+              "@type": "Organization",
+              "name": "AINAV.ART"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AINAV.ART",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.ainav.art/assets/images/AInavLogo.png"
+              }
+            }
+          },
+          {
+            "@type": "NewsArticle",
+            "headline": "Midjourney V6.0重大更新：图像质量显著提升",
+            "datePublished": "2025-01-26T15:30:00+08:00",
+            "author": {
+              "@type": "Organization", 
+              "name": "AINAV.ART"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AINAV.ART",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.ainav.art/assets/images/AInavLogo.png"
+              }
+            }
+          }
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AINAV.ART",
+        "url": "https://www.ainav.art"
+      }
+    }
+    </script>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            margin-bottom: 50px;
+            border-radius: 20px;
+        }
+        .header h1 {
+            font-size: 3.2em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .news-categories {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .category-btn {
+            background: white;
+            color: #667eea;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #667eea;
+        }
+        .category-btn:hover,
+        .category-btn.active {
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        .main-news {
+            display: grid;
+            gap: 30px;
+        }
+        .news-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .news-card.featured {
+            grid-column: 1 / -1;
+        }
+        .news-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+            position: relative;
+        }
+        .news-card.featured .news-image {
+            height: 300px;
+        }
+        .news-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(255,255,255,0.9);
+            color: #667eea;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .breaking-badge {
+            background: #ff4757;
+            color: white;
+        }
+        .trending-badge {
+            background: #ffa502;
+            color: white;
+        }
+        .news-content {
+            padding: 25px;
+        }
+        .news-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .news-category {
+            background: #667eea;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+        }
+        .news-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            line-height: 1.4;
+        }
+        .news-card.featured .news-title {
+            font-size: 1.8em;
+        }
+        .news-excerpt {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .news-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .read-more {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .read-more:hover {
+            color: #5a6fd8;
+            text-decoration: none;
+        }
+        .news-stats {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .sidebar {
+            display: grid;
+            gap: 30px;
+        }
+        .sidebar-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .sidebar-title {
+            color: #667eea;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .trending-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .trending-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .trending-item:last-child {
+            border-bottom: none;
+        }
+        .trending-number {
+            background: #667eea;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .trending-content h4 {
+            margin: 0 0 5px 0;
+            font-size: 0.95em;
+            color: #333;
+        }
+        .trending-content p {
+            margin: 0;
+            font-size: 0.8em;
+            color: #666;
+        }
+        .newsletter-signup {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+        .newsletter-signup h3 {
+            margin-bottom: 15px;
+        }
+        .newsletter-signup p {
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+        }
+        .newsletter-input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+        .newsletter-btn {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .newsletter-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        .back-home {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .back-home a {
+            background: #667eea;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-size: 1.1em;
+        }
+        .back-home a:hover {
+            background: #5a6fd8;
+            text-decoration: none;
+            color: white;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 2.5em;
+            }
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📰 AI新闻资讯</h1>
+            <p>紧跟人工智能发展脉搏，获取最新技术动态、产品发布和行业趋势</p>
+        </div>
+        
+        <!-- 新闻分类 -->
+        <div class="news-categories">
+            <a href="#" class="category-btn active">🔥 全部</a>
+            <a href="#" class="category-btn">🚀 产品发布</a>
+            <a href="#" class="category-btn">💡 技术突破</a>
+            <a href="#" class="category-btn">💼 行业动态</a>
+            <a href="#" class="category-btn">📊 市场分析</a>
+            <a href="#" class="category-btn">🎯 深度报道</a>
+        </div>
+        
+        <div class="news-grid">
+            <!-- 主要新闻区域 -->
+            <div class="main-news">
+                <!-- 头条新闻 -->
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <div class="news-badge breaking-badge">🔥 头条</div>
+                        🤖
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">产品发布</span>
+                            <span>2025年1月27日</span>
+                            <span>📖 5分钟阅读</span>
+                        </div>
+                        <h2 class="news-title">ChatGPT-4o重大更新：多模态能力全面升级，支持实时语音对话</h2>
+                        <p class="news-excerpt">
+                            OpenAI正式发布ChatGPT-4o的重大更新，新版本在多模态处理能力方面实现了突破性进展。用户现在可以与ChatGPT进行实时语音对话，AI能够理解语音中的情感和语调，并以更自然的方式回应。此外，图像理解能力也得到显著提升，能够处理更复杂的视觉任务...
+                        </p>
+                        <div class="news-footer">
+                            <a href="/cn/detail/chatgpt.html" class="read-more">阅读全文 →</a>
+                            <div class="news-stats">
+                                <span>👁️ 2.5K</span>
+                                <span>💬 89</span>
+                                <span>❤️ 156</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- 普通新闻 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <div class="news-badge trending-badge">🔥 热门</div>
+                        🎨
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">技术突破</span>
+                            <span>2025年1月26日</span>
+                            <span>📖 3分钟阅读</span>
+                        </div>
+                        <h3 class="news-title">Midjourney V6.0重大更新：图像质量显著提升，新增文字渲染功能</h3>
+                        <p class="news-excerpt">
+                            Midjourney发布V6.0版本更新，在图像生成质量和细节处理方面实现了重大突破。新版本支持在图像中准确渲染文字内容，这一功能将极大扩展AI绘画的应用场景...
+                        </p>
+                        <div class="news-footer">
+                            <a href="/cn/detail/midjourney.html" class="read-more">阅读全文 →</a>
+                            <div class="news-stats">
+                                <span>👁️ 1.8K</span>
+                                <span>💬 45</span>
+                                <span>❤️ 92</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        🎵
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">行业动态</span>
+                            <span>2025年1月25日</span>
+                            <span>📖 4分钟阅读</span>
+                        </div>
+                        <h3 class="news-title">Suno AI获得1亿美元B轮融资，AI音乐生成市场竞争加剧</h3>
+                        <p class="news-excerpt">
+                            AI音乐生成平台Suno AI宣布完成1亿美元B轮融资，本轮融资由知名风投机构领投。这标志着AI音乐生成领域正在成为投资热点，预计将推动整个行业的快速发展...
+                        </p>
+                        <div class="news-footer">
+                            <a href="/cn/detail/suno.html" class="read-more">阅读全文 →</a>
+                            <div class="news-stats">
+                                <span>👁️ 1.2K</span>
+                                <span>💬 32</span>
+                                <span>❤️ 67</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        🎬
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">技术突破</span>
+                            <span>2025年1月24日</span>
+                            <span>📖 6分钟阅读</span>
+                        </div>
+                        <h3 class="news-title">OpenAI Sora正式开放公测，AI视频生成进入新纪元</h3>
+                        <p class="news-excerpt">
+                            经过长期的内测和优化，OpenAI正式宣布Sora AI视频生成工具开放公测。Sora能够根据文字描述生成长达60秒的高质量视频，在视频连贯性和细节表现方面达到了前所未有的水平...
+                        </p>
+                        <div class="news-footer">
+                            <a href="/cn/detail/sora.html" class="read-more">阅读全文 →</a>
+                            <div class="news-stats">
+                                <span>👁️ 3.1K</span>
+                                <span>💬 128</span>
+                                <span>❤️ 245</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- 侧边栏 -->
+            <div class="sidebar">
+                <!-- 热门话题 -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">
+                        🔥 热门话题
+                    </h3>
+                    <ul class="trending-list">
+                        <li class="trending-item">
+                            <div class="trending-number">1</div>
+                            <div class="trending-content">
+                                <h4>ChatGPT-4o语音功能</h4>
+                                <p>实时语音对话革命性突破</p>
+                            </div>
+                        </li>
+                        <li class="trending-item">
+                            <div class="trending-number">2</div>
+                            <div class="trending-content">
+                                <h4>Midjourney文字渲染</h4>
+                                <p>AI绘画新增文字生成能力</p>
+                            </div>
+                        </li>
+                        <li class="trending-item">
+                            <div class="trending-number">3</div>
+                            <div class="trending-content">
+                                <h4>Sora公测开放</h4>
+                                <p>AI视频生成工具正式上线</p>
+                            </div>
+                        </li>
+                        <li class="trending-item">
+                            <div class="trending-number">4</div>
+                            <div class="trending-content">
+                                <h4>Claude 3.5升级</h4>
+                                <p>长文处理能力进一步提升</p>
+                            </div>
+                        </li>
+                        <li class="trending-item">
+                            <div class="trending-number">5</div>
+                            <div class="trending-content">
+                                <h4>AI监管新政策</h4>
+                                <p>各国加强AI技术监管</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 快速链接 -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">
+                        🔗 快速链接
+                    </h3>
+                    <div style="display: grid; gap: 10px;">
+                        <a href="/cn/detail/chatgpt.html" style="color: #667eea; text-decoration: none; padding: 10px; background: #f8f9fa; border-radius: 8px; transition: all 0.3s ease;">
+                            🤖 ChatGPT详情
+                        </a>
+                        <a href="/cn/detail/midjourney.html" style="color: #667eea; text-decoration: none; padding: 10px; background: #f8f9fa; border-radius: 8px; transition: all 0.3s ease;">
+                            🎨 Midjourney详情
+                        </a>
+                        <a href="/compare.html" style="color: #667eea; text-decoration: none; padding: 10px; background: #f8f9fa; border-radius: 8px; transition: all 0.3s ease;">
+                            ⚖️ AI工具对比
+                        </a>
+                        <a href="/tutorials.html" style="color: #667eea; text-decoration: none; padding: 10px; background: #f8f9fa; border-radius: 8px; transition: all 0.3s ease;">
+                            📚 使用教程
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 订阅通知 -->
+                <div class="sidebar-section newsletter-signup">
+                    <h3>📬 订阅AI资讯</h3>
+                    <p>第一时间获取最新AI动态和深度分析</p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="输入您的邮箱">
+                        <button class="newsletter-btn">订阅</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="back-home">
+            <a href="/cn/">🏠 返回AI工具导航首页</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI工具分类大全 - 按功能分类的人工智能工具导航 | AINAV.ART</title>
+    <meta name="description" content="AI工具分类大全 - 按功能分类整理的1000+人工智能工具。包含AI对话、绘画、写作、音频、视频、编程等各类AI工具分类导航，快速找到您需要的AI应用。">
+    <meta name="keywords" content="AI工具分类,人工智能工具分类,AI对话工具,AI绘画工具,AI写作工具,AI音频工具,AI视频工具,AI编程工具,AI设计工具,AI营销工具,AI教育工具,AI办公工具,AI工具导航分类">
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AI工具分类大全 - 按功能分类的人工智能工具导航">
+    <meta property="og:description" content="按功能分类整理的1000+人工智能工具，包含AI对话、绘画、写作、音频、视频等各类AI工具分类导航。">
+    <meta property="og:url" content="https://www.ainav.art/categories.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.ainav.art/assets/images/AInavLogo.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI工具分类大全 - 按功能分类的人工智能工具导航">
+    <meta name="twitter:description" content="按功能分类整理的1000+人工智能工具，快速找到您需要的AI应用。">
+    <meta name="twitter:image" content="https://www.ainav.art/assets/images/AInavLogo.png">
+    <meta name="twitter:site" content="@AINAV_ART">
+    
+    <!-- 结构化数据 - CollectionPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "AI工具分类大全",
+      "description": "按功能分类整理的人工智能工具集合",
+      "url": "https://www.ainav.art/categories.html",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "AI工具分类列表",
+        "numberOfItems": 12,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "AI对话工具",
+            "description": "ChatGPT、Claude、Gemini等智能对话助手",
+            "url": "#ai-chat-tools"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "AI绘画工具",
+            "description": "Midjourney、DALL-E、Stable Diffusion等图像生成工具",
+            "url": "#ai-art-tools"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AI写作工具",
+            "description": "Notion AI、Jasper、Copy.ai等文本生成工具",
+            "url": "#ai-writing-tools"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "AI音频工具",
+            "description": "Suno、ElevenLabs、Stable Audio等音频生成工具",
+            "url": "#ai-audio-tools"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "AI视频工具",
+            "description": "Runway、Pika、Luma Dream Machine等视频生成工具",
+            "url": "#ai-video-tools"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "AI编程工具",
+            "description": "GitHub Copilot、Cursor、Replit等编程辅助工具",
+            "url": "#ai-coding-tools"
+          }
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AINAV.ART",
+        "url": "https://www.ainav.art"
+      }
+    }
+    </script>
+    
+    <!-- 结构化数据 - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.ainav.art"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI工具分类",
+          "item": "https://www.ainav.art/categories.html"
+        }
+      ]
+    }
+    </script>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .header p {
+            font-size: 1.4em;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .stat-item {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
+        }
+        .stat-label {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .category-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+        .category-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .category-icon {
+            font-size: 3em;
+            margin-right: 20px;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            color: white;
+        }
+        .category-info h2 {
+            font-size: 1.8em;
+            margin: 0 0 5px 0;
+            color: #333;
+        }
+        .category-info .count {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .category-description {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .tools-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .tool-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .tool-item:hover {
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-color: #5a6fd8;
+            transform: scale(1.05);
+        }
+        .tool-logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+        .tool-name {
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+        .view-all-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .view-all-btn:hover {
+            background: linear-gradient(135deg, #5a6fd8, #6c5ce7);
+            text-decoration: none;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .back-home {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .back-home a {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-size: 1.1em;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        .back-home a:hover {
+            background: rgba(255,255,255,0.3);
+            text-decoration: none;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .trending-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .new-badge {
+            background: #2ed573;
+        }
+        .popular-badge {
+            background: #ffa502;
+        }
+        @media (max-width: 768px) {
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 2.5em;
+            }
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .tools-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗂️ AI工具分类大全</h1>
+            <p>按功能分类整理的1000+人工智能工具，快速找到最适合您需求的AI应用</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">AI工具</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">主要分类</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">子分类</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="categories-grid">
+            <!-- AI对话工具 -->
+            <div class="category-card" id="ai-chat-tools">
+                <div class="trending-badge">🔥 热门</div>
+                <div class="category-header">
+                    <div class="category-icon">🤖</div>
+                    <div class="category-info">
+                        <h2>AI对话工具</h2>
+                        <div class="count">150+ 工具</div>
+                    </div>
+                </div>
+                <div class="category-description">
+                    智能对话助手，支持自然语言交流、问答、创作、编程等多种任务。包括ChatGPT、Claude、Gemini等顶级AI助手。
+                </div>
+                <div class="tools-list">
+                    <a href="/cn/detail/chatgpt.html" class="tool-item">
+                        <img src="./assets/images/logos/chatgpt.png" alt="ChatGPT Logo" class="tool-logo">
+                        <span class="tool-name">ChatGPT</span>
+                    </a>
+                    <a href="/cn/detail/claude.html" class="tool-item">
+                        <img src="./assets/images/logos/claude.png" alt="Claude Logo" class="tool-logo">
+                        <span class="tool-name">Claude</span>
+                    </a>
+                    <a href="/cn/detail/gemini.html" class="tool-item">
+                        <img src="./assets/images/logos/gemini.png" alt="Gemini Logo" class="tool-logo">
+                        <span class="tool-name">Gemini</span>
+                    </a>
+                    <a href="/cn/detail/perplexity.html" class="tool-item">
+                        <img src="./assets/images/logos/perplexity.png" alt="Perplexity Logo" class="tool-logo">
+                        <span class="tool-name">Perplexity</span>
+                    </a>
+                </div>
+                <button class="view-all-btn" onclick="location.href='/cn/#AI对话'">查看全部 AI对话工具 →</button>
+            </div>
+            
+            <!-- AI绘画工具 -->
+            <div class="category-card" id="ai-art-tools">
+                <div class="trending-badge">🎨 创意</div>
+                <div class="category-header">
+                    <div class="category-icon">🎨</div>
+                    <div class="category-info">
+                        <h2>AI绘画工具</h2>
+                        <div class="count">200+ 工具</div>
+                    </div>
+                </div>
+                <div class="category-description">
+                    AI图像生成和编辑工具，支持文生图、图生图、风格转换等功能。包括Midjourney、DALL-E、Stable Diffusion等。
+                </div>
+                <div class="tools-list">
+                    <a href="/cn/detail/midjourney.html" class="tool-item">
+                        <img src="./assets/images/logos/midjourney.png" alt="Midjourney Logo" class="tool-logo">
+                        <span class="tool-name">Midjourney</span>
+                    </a>
+                    <a href="/cn/detail/dall-e.html" class="tool-item">
+                        <img src="./assets/images/logos/DALL-E.png" alt="DALL-E Logo" class="tool-logo">
+                        <span class="tool-name">DALL-E</span>
+                    </a>
+                    <a href="/cn/detail/stable-diffusion.html" class="tool-item">
+                        <img src="./assets/images/logos/stable-diffusion.png" alt="Stable Diffusion Logo" class="tool-logo">
+                        <span class="tool-name">Stable Diffusion</span>
+                    </a>
+                    <a href="/cn/detail/leonardo.html" class="tool-item">
+                        <img src="./assets/images/logos/leonardo.png" alt="Leonardo Logo" class="tool-logo">
+                        <span class="tool-name">Leonardo</span>
+                    </a>
+                </div>
+                <button class="view-all-btn" onclick="location.href='/cn/#AI绘画'">查看全部 AI绘画工具 →</button>
+            </div>
+            
+            <!-- AI写作工具 -->
+            <div class="category-card" id="ai-writing-tools">
+                <div class="trending-badge popular-badge">📝 实用</div>
+                <div class="category-header">
+                    <div class="category-icon">✍️</div>
+                    <div class="category-info">
+                        <h2>AI写作工具</h2>
+                        <div class="count">120+ 工具</div>
+                    </div>
+                </div>
+                <div class="category-description">
+                    AI文本生成和编辑工具，支持文章写作、文案创作、翻译润色等功能。提升写作效率和质量。
+                </div>
+                <div class="tools-list">
+                    <a href="/cn/detail/notion-ai.html" class="tool-item">
+                        <img src="./assets/images/logos/notion-ai.png" alt="Notion AI Logo" class="tool-logo">
+                        <span class="tool-name">Notion AI</span>
+                    </a>
+                    <a href="/cn/detail/jasper.html" class="tool-item">
+                        <img src="./assets/images/logos/Jasper.png" alt="Jasper Logo" class="tool-logo">
+                        <span class="tool-name">Jasper</span>
+                    </a>
+                    <a href="/cn/detail/copyai.html" class="tool-item">
+                        <img src="./assets/images/logos/CopyAI.png" alt="Copy.ai Logo" class="tool-logo">
+                        <span class="tool-name">Copy.ai</span>
+                    </a>
+                    <a href="/cn/detail/grammarly.html" class="tool-item">
+                        <img src="./assets/images/logos/grammarly.jpg" alt="Grammarly Logo" class="tool-logo">
+                        <span class="tool-name">Grammarly</span>
+                    </a>
+                </div>
+                <button class="view-all-btn" onclick="location.href='/cn/#AI写作'">查看全部 AI写作工具 →</button>
+            </div>
+            
+            <!-- AI音频工具 -->
+            <div class="category-card" id="ai-audio-tools">
+                <div class="trending-badge new-badge">🎵 新兴</div>
+                <div class="category-header">
+                    <div class="category-icon">🎵</div>
+                    <div class="category-info">
+                        <h2>AI音频工具</h2>
+                        <div class="count">80+ 工具</div>
+                    </div>
+                </div>
+                <div class="category-description">
+                    AI音频生成和处理工具，支持音乐创作、语音合成、音效制作等功能。开启音频创作新时代。
+                </div>
+                <div class="tools-list">
+                    <a href="/cn/detail/suno.html" class="tool-item">
+                        <img src="./assets/images/logos/suno.png" alt="Suno Logo" class="tool-logo">
+                        <span class="tool-name">Suno</span>
+                    </a>
+                    <a href="/cn/detail/elevenlabs.html" class="tool-item">
+                        <img src="./assets/images/logos/elevenlabs.png" alt="ElevenLabs Logo" class="tool-logo">
+                        <span class="tool-name">ElevenLabs</span>
+                    </a>
+                    <a href="/cn/detail/stable-audio.html" class="tool-item">
+                        <img src="./assets/images/logos/stable-audio.png" alt="Stable Audio Logo" class="tool-logo">
+                        <span class="tool-name">Stable Audio</span>
+                    </a>
+                    <a href="/cn/detail/udio.html" class="tool-item">
+                        <img src="./assets/images/logos/udio.png" alt="Udio Logo" class="tool-logo">
+                        <span class="tool-name">Udio</span>
+                    </a>
+                </div>
+                <button class="view-all-btn" onclick="location.href='/cn/#AI音频'">查看全部 AI音频工具 →</button>
+            </div>
+            
+            <!-- AI视频工具 -->
+            <div class="category-card" id="ai-video-tools">
+                <div class="trending-badge">🎬 前沿</div>
+                <div class="category-header">
+                    <div class="category-icon">🎬</div>
+                    <div class="category-info">
+                        <h2>AI视频工具</h2>
+                        <div class="count">90+ 工具</div>
+                    </div>
+                </div>
+                <div class="category-description">
+                    AI视频生成和编辑工具，支持文生视频、视频编辑、特效制作等功能。革命性的视频创作体验。
+                </div>
+                <div class="tools-list">
+                    <a href="/cn/detail/runway.html" class="tool-item">
+                        <img src="./assets/images/logos/runway.png" alt="Runway Logo" class="tool-logo">
+                        <span class="tool-name">Runway</span>
+                    </a>
+                    <a href="/cn/detail/pika.html" class="tool-item">
+                        <img src="./assets/images/logos/pika.png" alt="Pika Logo" class="tool-logo">
+                        <span class="tool-name">Pika</span>
+                    </a>
+                    <a href="/cn/detail/sora.html" class="tool-item">
+                        <img src="./assets/images/logos/sora.png" alt="Sora Logo" class="tool-logo">
+                        <span class="tool-name">Sora</span>
+                    </a>
+                    <a href="/cn/detail/luma-dream-machine.html" class="tool-item">
+                        <img src="./assets/images/logos/luma-dream-machine.png" alt="Luma Dream Machine Logo" class="tool-logo">
+                        <span class="tool-name">Luma Dream</span>
+                    </a>
+                </div>
+                <button class="view-all-btn" onclick="location.href='/cn/#AI视频'">查看全部 AI视频工具 →</button>
+            </div>
+            
+            <!-- AI编程工具 -->
+            <div class="category-card" id="ai-coding-tools">
+                <div class="trending-badge popular-badge">💻 高效</div>
+                <div class="category-header">
+                    <div class="category-icon">💻</div>
+                    <div class="category-info">
+                        <h2>AI编程工具</h2>
+                        <div class="count">100+ 工具</div>
+                    </div>
+                </div>
+                <div class="category-description">
+                    AI编程辅助工具，支持代码生成、调试、重构等功能。显著提升开发效率和代码质量。
+                </div>
+                <div class="tools-list">
+                    <a href="/cn/detail/microsoft-copilot.html" class="tool-item">
+                        <img src="./assets/images/logos/copilot.png" alt="GitHub Copilot Logo" class="tool-logo">
+                        <span class="tool-name">GitHub Copilot</span>
+                    </a>
+                    <a href="#" class="tool-item">
+                        <img src="./assets/images/logos/cursor.png" alt="Cursor Logo" class="tool-logo">
+                        <span class="tool-name">Cursor</span>
+                    </a>
+                    <a href="#" class="tool-item">
+                        <img src="./assets/images/logos/replit.png" alt="Replit Logo" class="tool-logo">
+                        <span class="tool-name">Replit</span>
+                    </a>
+                    <a href="#" class="tool-item">
+                        <img src="./assets/images/logos/codeium.png" alt="Codeium Logo" class="tool-logo">
+                        <span class="tool-name">Codeium</span>
+                    </a>
+                </div>
+                <button class="view-all-btn" onclick="location.href='/cn/#AI编程'">查看全部 AI编程工具 →</button>
+            </div>
+        </div>
+        
+        <div class="back-home">
+            <a href="/cn/">🏠 返回AI工具导航首页</a>
+        </div>
+    </div>
+</body>
+</html>

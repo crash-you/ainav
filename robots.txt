@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.ainav.art/sitemap.xml
+
+# 允许搜索引擎抓取所有重要页面
+Allow: /cn/
+Allow: /en/
+Allow: /assets/
+
+# 禁止抓取不必要的文件
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /*.sketch$
+
+# 允许Google Ads爬虫
+User-agent: AdsBot-Google
+Allow: /
+
+# 允许Google图片搜索
+User-agent: Googlebot-Image
+Allow: /assets/images/

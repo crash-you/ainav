@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- 主页面 -->
+  <url>
+    <loc>https://www.ainav.art/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.ainav.art/cn/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ainav.art/en/index.html"/>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/AInavLogo.png</image:loc>
+      <image:title>AINAV.ART - 全球最全AI工具导航网站Logo</image:title>
+    </image:image>
+  </url>
+  
+  <!-- 中文版页面 -->
+  <url>
+    <loc>https://www.ainav.art/cn/index.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ainav.art/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.ainav.art/cn/index.html"/>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/AInavLogo.png</image:loc>
+      <image:title>AINAV.ART Logo</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/about.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 英文版页面 -->
+  <url>
+    <loc>https://www.ainav.art/en/index.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.ainav.art/cn/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ainav.art/en/index.html"/>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/en/about.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 政策页面 -->
+  <url>
+    <loc>https://www.ainav.art/privacy-policy.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/terms-of-service.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/contact.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 功能页面 -->
+  <url>
+    <loc>https://www.ainav.art/categories.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/AInavLogo.png</image:loc>
+      <image:title>AI工具分类大全</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/tutorials.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/AInavLogo.png</image:loc>
+      <image:title>AI工具使用教程大全</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/compare.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/AInavLogo.png</image:loc>
+      <image:title>AI工具对比大全</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/faq.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/AInavLogo.png</image:loc>
+      <image:title>AI工具常见问题FAQ</image:title>
+    </image:image>
+  </url>
+  
+  <!-- 热门AI工具详情页面 -->
+  <url>
+    <loc>https://www.ainav.art/cn/detail/chatgpt.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/chatgpt.png</image:loc>
+      <image:title>ChatGPT - OpenAI开发的AI对话助手</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/claude.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/claude.png</image:loc>
+      <image:title>Claude - Anthropic开发的长文理解AI助手</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/midjourney.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/midjourney.png</image:loc>
+      <image:title>Midjourney - 高质量AI绘画工具</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/dall-e.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/DALL-E.png</image:loc>
+      <image:title>DALL-E - OpenAI的AI图像生成工具</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/stable-diffusion.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/stable-diffusion.png</image:loc>
+      <image:title>Stable Diffusion - 开源AI图像生成模型</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/gemini.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/gemini.png</image:loc>
+      <image:title>Google Gemini - 谷歌多模态AI助手</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/suno.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/suno.png</image:loc>
+      <image:title>Suno - AI音乐生成工具</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/sora.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/sora.png</image:loc>
+      <image:title>OpenAI Sora - 革命性AI视频生成模型</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/runway.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/runway.png</image:loc>
+      <image:title>Runway - AI创意工具套件与视频生成</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/leonardo.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/leonardo.png</image:loc>
+      <image:title>Leonardo - 概念设计AI绘画平台</image:title>
+    </image:image>
+  </url>
+  
+  <!-- 更多AI工具详情页面 -->
+  <url>
+    <loc>https://www.ainav.art/cn/detail/microsoft-copilot.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/copilot.png</image:loc>
+      <image:title>Microsoft Copilot - 微软企业级AI助手</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/perplexity.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/perplexity.png</image:loc>
+      <image:title>Perplexity - 带引用的AI搜索问答工具</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/ideogram.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/ideogram.png</image:loc>
+      <image:title>Ideogram - 文字标识AI生成工具</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/adobe-firefly.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/adobe-firefly.png</image:loc>
+      <image:title>Adobe Firefly - Adobe的AI创意工具</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/playground.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/playground.png</image:loc>
+      <image:title>Playground - 多模型AI图像生成平台</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/flux-1.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/flux-1.png</image:loc>
+      <image:title>Flux.1 - 高保真AI图像生成模型</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/krea.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/krea.png</image:loc>
+      <image:title>Krea - 实时AI图像生成工具</image:title>
+    </image:image>
+  </url>
+  
+  <!-- AI写作工具 -->
+  <url>
+    <loc>https://www.ainav.art/cn/detail/notion-ai.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/notion-ai.png</image:loc>
+      <image:title>Notion AI - 智能文档写作助手</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/grammarly.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/grammarly.jpg</image:loc>
+      <image:title>Grammarly - AI写作语法检查工具</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/copyai.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/CopyAI.png</image:loc>
+      <image:title>Copy.ai - AI营销文案生成工具</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/jasper.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/Jasper.png</image:loc>
+      <image:title>Jasper - AI写作助手</image:title>
+    </image:image>
+  </url>
+  
+  <!-- AI视频工具 -->
+  <url>
+    <loc>https://www.ainav.art/cn/detail/pika.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/pika.png</image:loc>
+      <image:title>Pika - AI视频生成工具</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/luma-dream-machine.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/luma-dream-machine.png</image:loc>
+      <image:title>Luma Dream Machine - 高保真AI视频生成</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/heygen.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/heygen.png</image:loc>
+      <image:title>HeyGen - 数字人视频生成工具</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/capcut.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/capcut.png</image:loc>
+      <image:title>CapCut - 集成AI功能的视频剪辑工具</image:title>
+    </image:image>
+  </url>
+  
+  <!-- AI音频工具 -->
+  <url>
+    <loc>https://www.ainav.art/cn/detail/udio.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/udio.png</image:loc>
+      <image:title>Udio - AI音乐生成与编辑工具</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/elevenlabs.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/elevenlabs.png</image:loc>
+      <image:title>ElevenLabs - 高拟真AI语音合成工具</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.ainav.art/cn/detail/stable-audio.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://www.ainav.art/assets/images/logos/stable-audio.png</image:loc>
+      <image:title>Stable Audio - 扩散模型音频生成工具</image:title>
+    </image:image>
+  </url>
+  
+</urlset>

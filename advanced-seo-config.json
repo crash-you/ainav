@@ -1,0 +1,135 @@
+{
+  "website": {
+    "name": "AINAV.ART",
+    "domain": "https://www.ainav.art",
+    "description": "全球最全的AI工具导航网站，精选收录1000+优质人工智能工具和资源",
+    "keywords": [
+      "AI工具导航", "人工智能工具", "AI网站大全", "ChatGPT", "Claude", "Midjourney",
+      "AI绘画工具", "AI写作助手", "AI视频生成", "AI音频制作", "机器学习", "深度学习",
+      "AIGC", "大语言模型", "LLM", "AI应用", "AI开发工具", "AI学习资源"
+    ],
+    "languages": ["zh-CN", "en-US"],
+    "social": {
+      "twitter": "@AINAV_ART",
+      "github": "https://github.com/crash-you/ainav"
+    }
+  },
+  "seo": {
+    "titleTemplates": {
+      "homepage": "{siteName} - {tagline}",
+      "category": "{categoryName} - {siteName}",
+      "tool": "{toolName}详细评测 - {category} | {siteName}",
+      "about": "关于{siteName} - {description}"
+    },
+    "metaDescriptionTemplates": {
+      "homepage": "{siteName} - {description}。涵盖{toolCount}+AI工具，包含{popularTools}等热门应用。",
+      "tool": "{toolName}详细评测和使用指南 - {toolDescription}。了解功能特点、使用技巧和最新更新。",
+      "category": "{categoryName}工具大全 - 精选{toolCount}+优质{categoryName}工具，包含{popularTools}等。"
+    },
+    "structuredData": {
+      "organization": {
+        "@type": "Organization",
+        "name": "AINAV.ART",
+        "url": "https://www.ainav.art",
+        "logo": "https://www.ainav.art/assets/images/AInavLogo.png",
+        "sameAs": [
+          "https://github.com/crash-you/ainav"
+        ]
+      },
+      "website": {
+        "@type": "WebSite",
+        "name": "AINAV.ART",
+        "url": "https://www.ainav.art",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.ainav.art/?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    }
+  },
+  "tools": {
+    "categories": {
+      "常用AI工具": {
+        "name": "常用AI工具",
+        "description": "最受欢迎的AI助手和对话工具",
+        "keywords": ["AI助手", "对话AI", "ChatGPT", "Claude", "Gemini"]
+      },
+      "AI绘画": {
+        "name": "AI绘画工具",
+        "description": "文生图和图像生成AI工具",
+        "keywords": ["AI绘画", "文生图", "图像生成", "Midjourney", "DALL-E", "Stable Diffusion"]
+      },
+      "AI写作": {
+        "name": "AI写作工具", 
+        "description": "文本生成和写作辅助AI工具",
+        "keywords": ["AI写作", "文本生成", "内容创作", "Notion AI", "Jasper", "Copy.ai"]
+      },
+      "AI音频": {
+        "name": "AI音频工具",
+        "description": "音乐生成和语音合成AI工具", 
+        "keywords": ["AI音乐", "语音合成", "音频生成", "Suno", "ElevenLabs", "Stable Audio"]
+      },
+      "AI视频": {
+        "name": "AI视频工具",
+        "description": "视频生成和编辑AI工具",
+        "keywords": ["AI视频", "视频生成", "视频编辑", "Runway", "Pika", "Luma Dream Machine"]
+      }
+    },
+    "popularTools": [
+      {
+        "name": "ChatGPT",
+        "category": "常用AI工具",
+        "description": "OpenAI开发的最强AI对话助手",
+        "url": "https://chat.openai.com/",
+        "features": ["自然语言对话", "代码编写", "文章创作", "翻译总结"],
+        "pricing": ["免费版", "ChatGPT Plus $20/月"],
+        "rating": 4.8
+      },
+      {
+        "name": "Midjourney", 
+        "category": "AI绘画",
+        "description": "高质量文生图与风格化创作工具",
+        "url": "https://midjourney.com/",
+        "features": ["文生图", "风格化创作", "高质量输出", "艺术风格"],
+        "pricing": ["基础版 $10/月", "标准版 $30/月"],
+        "rating": 4.7
+      },
+      {
+        "name": "Claude",
+        "category": "常用AI工具", 
+        "description": "Anthropic开发的长文理解AI助手",
+        "url": "https://claude.ai/",
+        "features": ["长文理解", "方案撰写", "代码分析", "文档处理"],
+        "pricing": ["免费版", "Claude Pro $20/月"],
+        "rating": 4.6
+      }
+    ]
+  },
+  "performance": {
+    "criticalResources": [
+      "/assets/css/bootstrap.css",
+      "/assets/js/jquery-1.11.1.min.js",
+      "/assets/images/AInavLogo.png"
+    ],
+    "preconnectDomains": [
+      "https://fonts.googleapis.com",
+      "https://www.google-analytics.com", 
+      "https://pagead2.googlesyndication.com"
+    ],
+    "lazyLoadImages": true,
+    "compressImages": true,
+    "minifyAssets": true
+  },
+  "analytics": {
+    "googleAnalytics": "G-GBG1P2RHMC",
+    "baiduAnalytics": "c05bb16ea908292af9f6c513087a1cc3",
+    "googleAds": "ca-pub-4770465793767896"
+  },
+  "compliance": {
+    "privacyPolicy": "/privacy-policy.html",
+    "termsOfService": "/terms-of-service.html",
+    "cookiePolicy": true,
+    "gdprCompliant": true
+  }
+}

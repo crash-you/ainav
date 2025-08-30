@@ -1,0 +1,102 @@
+{
+  "name": "AINAV.ART - 全球最全AI工具导航",
+  "short_name": "AINAV.ART",
+  "description": "全球最全的AI工具导航网站，精选收录1000+优质人工智能工具和资源。涵盖AI绘画、写作、视频、音频等全领域工具。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "categories": ["productivity", "utilities", "education"],
+  "icons": [
+    {
+      "src": "/assets/images/AInavLogo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/AInavLogo.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "常用AI工具",
+      "short_name": "AI工具",
+      "description": "查看最受欢迎的AI工具",
+      "url": "/cn/#常用AI工具",
+      "icons": [
+        {
+          "src": "/assets/images/logos/chatgpt.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "AI绘画工具",
+      "short_name": "AI绘画",
+      "description": "探索AI图像生成工具",
+      "url": "/cn/#AI绘画",
+      "icons": [
+        {
+          "src": "/assets/images/logos/midjourney.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "AI写作工具",
+      "short_name": "AI写作", 
+      "description": "发现AI文本生成工具",
+      "url": "/cn/#AI写作",
+      "icons": [
+        {
+          "src": "/assets/images/logos/notion-ai.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "工具对比",
+      "short_name": "对比",
+      "description": "AI工具详细对比分析",
+      "url": "/compare.html",
+      "icons": [
+        {
+          "src": "/assets/images/AInavLogo.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/images/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "AINAV.ART桌面版截图"
+    },
+    {
+      "src": "/assets/images/screenshot-mobile.png", 
+      "sizes": "375x667",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "AINAV.ART移动版截图"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}
