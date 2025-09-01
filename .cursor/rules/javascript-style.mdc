@@ -1,0 +1,31 @@
+---
+globs: *.js
+---
+
+# JavaScript编码规范
+
+## 代码风格
+- 使用ES6+语法，支持类和箭头函数
+- 使用 `const` 和 `let`，避免 `var`
+- 使用分号结束语句
+- 使用4个空格缩进
+- 使用驼峰命名法
+
+## 文档注释
+- 每个文件顶部包含功能描述注释
+- 使用JSDoc格式为函数添加注释
+- 类和重要方法必须有详细说明
+
+## 错误处理
+- 使用try-catch处理可能的错误
+- 提供有意义的错误信息
+- 在控制台输出调试信息时使用emoji和清晰的标识
+
+## 示例参考
+- SEO相关功能参考 [seo-analyzer.js](mdc:seo-analyzer.js)
+- 主题功能参考 [assets/js/xenon-custom.js](mdc:assets/js/xenon-custom.js)
+
+## 性能考虑
+- 避免不必要的DOM查询
+- 使用事件委托处理动态内容
+- 合理使用防抖和节流

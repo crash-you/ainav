@@ -1,0 +1,41 @@
+---
+description: SEO优化和性能相关规范
+---
+
+# SEO优化规范
+
+## 页面SEO要求
+每个页面都必须包含完整的SEO设置：
+
+### 基础meta标签
+- 唯一且描述性的title（50-60字符）
+- description meta标签（150-160字符）
+- keywords meta标签（相关关键词，逗号分隔）
+- viewport设置为响应式
+
+### 社交媒体优化
+- Open Graph标签（og:title, og:description, og:image, og:url等）
+- Twitter Cards标签
+- 适当的图片尺寸（1200x630px用于社交分享）
+
+### 结构化数据
+- 使用JSON-LD格式添加结构化数据
+- 网站类型使用WebSite schema
+- 工具页面使用SoftwareApplication schema
+
+## 性能优化
+- 图片使用适当的格式和尺寸
+- 启用图片懒加载
+- CSS和JS文件压缩
+- 使用CDN加速静态资源
+
+## 相关工具
+- 使用 [seo-analyzer.js](mdc:seo-analyzer.js) 进行SEO检测
+- 使用 [performance-optimizer.js](mdc:performance-optimizer.js) 进行性能优化
+- 参考 [advanced-seo-optimizer.js](mdc:advanced-seo-optimizer.js) 的高级优化功能
+
+## 内容质量
+- 确保内容原创且有价值
+- 保持中英文版本内容质量一致
+- 定期更新工具信息和描述
+- 避免关键词堆砌

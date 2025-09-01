@@ -1,0 +1,40 @@
+---
+description: 数据管理和工具添加规范
+---
+
+# 数据管理规范
+
+## 工具数据结构
+所有AI工具信息存储在 [tools_data.json](mdc:tools_data.json) 中，每个工具必须包含以下字段：
+
+### 必需字段
+- `name`: 工具名称
+- `slug`: URL友好的标识符
+- `url`: 工具官方网址
+- `logo`: logo文件名（存放在assets/images/logos/）
+- `category`: 工具分类（中文）
+- `description_cn`: 中文简短描述
+- `description_en`: 英文简短描述
+- `detailed_description_cn`: 中文详细描述
+- `detailed_description_en`: 英文详细描述
+- `pricing`: 定价信息（中文）
+- `pricing_en`: 定价信息（英文）
+
+### 数据一致性
+1. 所有工具的slug必须唯一
+2. logo文件必须存在于 `assets/images/logos/` 目录
+3. 分类名称必须与导航菜单保持一致
+4. 中英文描述内容应当对应
+
+## 添加新工具流程
+1. 准备工具logo图片（建议尺寸：128x128px）
+2. 在tools_data.json中添加完整的工具信息
+3. 创建对应的详情页面（cn/detail/和en/detail/）
+4. 确保在主页面能正确显示
+
+## 分类标准
+- AI写作: ChatGPT、Claude等对话和写作工具
+- AI绘画: Midjourney、DALL-E等图像生成工具
+- AI音频: Suno、ElevenLabs等音频生成工具
+- AI视频: Runway、Pika等视频生成工具
+- AI全球资讯: 行业资讯和技术动态网站

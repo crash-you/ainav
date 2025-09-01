@@ -1,0 +1,26 @@
+---
+alwaysApply: true
+---
+
+# AINAV.ART 项目结构指南
+
+这是一个AI工具导航网站项目，具有以下核心结构：
+
+## 项目架构
+- **双语支持**: [cn/index.html](mdc:cn/index.html) 中文版, [en/index.html](mdc:en/index.html) 英文版
+- **工具数据**: [tools_data.json](mdc:tools_data.json) 包含所有AI工具的结构化数据
+- **静态资源**: [assets/](mdc:assets/) 目录包含CSS、JS、图片资源
+- **详情页面**: `cn/detail/` 和 `en/detail/` 目录存放各工具的详细介绍页面
+
+## 关键文件说明
+- **主入口**: [index.html](mdc:index.html) 自动语言检测重定向
+- **数据源**: [tools_data.json](mdc:tools_data.json) 是所有工具信息的单一数据源
+- **样式**: 基于Bootstrap + 自定义Xenon主题
+- **SEO优化**: 包含多个SEO和性能优化脚本
+
+## 开发原则
+1. 保持中英文版本内容同步
+2. 所有工具信息优先从 tools_data.json 获取
+3. 图标文件放在 `assets/images/logos/` 目录
+4. 遵循响应式设计原则
+5. 注重SEO和性能优化

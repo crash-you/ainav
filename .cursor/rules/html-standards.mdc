@@ -1,0 +1,25 @@
+---
+globs: *.html
+---
+
+# HTML编码规范
+
+## 文档结构
+- 使用 `<!DOCTYPE html>` 声明
+- 中文页面使用 `<html lang="zh">`，英文页面使用 `<html lang="en">`
+- 必须包含完整的meta标签设置：charset、viewport、author
+- 使用语义化HTML5标签
+
+## SEO要求
+- 每个页面必须有唯一的 `<title>` 标签
+- 必须包含 `description` 和 `keywords` meta标签
+- 包含Open Graph和Twitter Cards元数据
+- 添加结构化数据 (JSON-LD格式)
+
+## 样式和脚本引用
+- CSS文件引用顺序：Google Fonts → 第三方库 → 自定义样式
+- JavaScript文件放在页面底部或使用适当的加载策略
+- 使用相对路径引用本地资源
+
+## 示例结构参考
+参考 [cn/index.html](mdc:cn/index.html) 的完整头部设置作为标准模板。
