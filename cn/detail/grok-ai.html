@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4770465793767896"
+        crossorigin="anonymous"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?c05bb16ea908292af9f6c513087a1cc3";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="crash-you" />
+    <title>Grok详细评测 - xAI实时搜索AI助手 | 使用指南 | AINAV.ART</title>
+    <meta name="keywords" content="Grok,Grok AI,xAI,Elon Musk AI,实时搜索AI,AI对话助手,X平台AI,Twitter AI,人工智能聊天,AI问答系统,Grok使用教程">
+    <meta name="description" content="Grok详细评测和使用指南 - 由xAI开发的实时搜索AI助手，集成于X平台。具备实时网络搜索能力，以幽默风趣的交互风格著称，支持多模态输入。">
+    <link rel="shortcut icon" href="../../assets/images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
+    <link rel="stylesheet" href="../../assets/css/fonts/linecons/css/linecons.css">
+    <link rel="stylesheet" href="../../assets/css/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/xenon-core.css">
+    <link rel="stylesheet" href="../../assets/css/xenon-components.css">
+    <link rel="stylesheet" href="../../assets/css/xenon-skins.css">
+    <link rel="stylesheet" href="../../assets/css/nav.css">
+    <script src="../../assets/js/jquery-1.11.1.min.js"></script>
+
+    <!-- FB Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.ainav.art/cn/detail/grok-ai.html">
+    <meta property="og:title" content="Grok详细评测 - xAI实时搜索AI助手">
+    <meta property="og:description" content="Grok详细评测和使用指南 - 由xAI开发的实时搜索AI助手，集成于X平台。具备实时网络搜索能力，以幽默风趣的交互风格著称。">
+    <meta property="og:image" content="https://www.ainav.art/assets/images/logos/grok-ai.png">
+    <meta property="og:site_name" content="AINAV.ART">
+    <meta property="og:locale" content="zh_CN">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Grok详细评测 - xAI实时搜索AI助手">
+    <meta name="twitter:description" content="Grok详细评测和使用指南 - 由xAI开发的实时搜索AI助手，集成于X平台。">
+    <meta name="twitter:image" content="https://www.ainav.art/assets/images/logos/grok-ai.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBG1P2RHMC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-GBG1P2RHMC');
+    </script>
+
+    <!-- 结构化数据 - 软件应用 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Grok",
+      "description": "Grok是由Elon Musk创立的xAI公司开发的AI助手，具备实时网络搜索能力，能够获取最新信息并提供准确回答。",
+      "url": "https://grok.x.ai/",
+      "applicationCategory": "AI助手",
+      "operatingSystem": "Web",
+      "author": {
+        "@type": "Organization",
+        "name": "xAI",
+        "url": "https://x.ai"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "16",
+        "priceCurrency": "USD",
+        "name": "X Premium+",
+        "description": "通过X Premium+订阅使用Grok"
+      },
+      "featureList": [
+        "实时网络搜索",
+        "多模态输入支持",
+        "X平台深度集成",
+        "幽默风趣的交互风格",
+        "图像理解能力"
+      ],
+      "dateModified": "2025-12-29",
+      "publisher": {
+        "@type": "Organization",
+        "name": "AINAV.ART",
+        "url": "https://www.ainav.art"
+      }
+    }
+    </script>
+
+    <style>
+        .tool-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+
+        .tool-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            background: white;
+            padding: 10px;
+        }
+
+        .tool-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tool-subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .tool-website-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .tool-website-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-card h3 {
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #1a1a2e;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            color: #1a1a2e;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .back-btn {
+            background: #1a1a2e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .back-btn:hover {
+            background: #16213e;
+            color: white;
+            text-decoration: none;
+        }
+
+        .related-tool {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .related-tool:hover {
+            background: #f8f9fa;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .related-tool img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body class="page-body">
+    <div class="page-container">
+        <!-- Navigation -->
+        <div class="sidebar-menu toggle-others fixed">
+            <div class="sidebar-menu-inner">
+                <header class="logo-env">
+                    <div class="logo">
+                        <a href="../index.html" class="logo-expanded">
+                            <img src="../../assets/images/AInavLogo.png" width="100%" alt="AINAV.ART Logo" />
+                        </a>
+                        <a href="../index.html" class="logo-collapsed">
+                            <img src="../../assets/images/AInavLogo.png" width="40" alt="AINAV.ART Logo" />
+                        </a>
+                    </div>
+                </header>
+                <ul id="main-menu" class="main-menu">
+                    <li>
+                        <a href="../index.html">
+                            <i class="linecons-home"></i>
+                            <span class="title">返回首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#常用AI工具">
+                            <i class="linecons-star"></i>
+                            <span class="title">常用AI工具</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html#热门AI新工具">
+                            <i class="linecons-fire"></i>
+                            <span class="title">热门AI新工具</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../about.html">
+                            <i class="linecons-heart"></i>
+                            <span class="tooltip-blue">关于本站</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Language Switcher -->
+            <nav class="navbar user-info-navbar" role="navigation">
+                <ul class="user-info-menu left-links list-inline list-unstyled">
+                    <li class="hidden-sm hidden-xs">
+                        <a href="#" data-toggle="sidebar">
+                            <i class="fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown hover-line language-switcher">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="../../assets/images/flags/flag-cn.png" alt="flag-cn" /> Chinese
+                        </a>
+                        <ul class="dropdown-menu languages">
+                            <li>
+                                <a href="../../en/detail/grok-ai.html">
+                                    <img src="../../assets/images/flags/flag-us.png" alt="flag-us" /> English
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                    <img src="../../assets/images/flags/flag-cn.png" alt="flag-cn" /> Chinese
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Tool Header -->
+            <div class="tool-header">
+                <div class="container text-center">
+                    <img src="../../assets/images/logos/grok-ai.png" alt="Grok Logo" class="tool-logo">
+                    <h1 class="tool-title">Grok</h1>
+                    <p class="tool-subtitle">xAI开发的实时搜索AI助手</p>
+                    <a href="https://grok.x.ai/" target="_blank" class="tool-website-btn">
+                        <i class="fa-external-link"></i> 访问官网
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="container">
+                <a href="../index.html" class="back-btn">
+                    <i class="fa-arrow-left"></i> 返回工具列表
+                </a>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <!-- Tool Description -->
+                        <div class="info-card">
+                            <h3><i class="linecons-doc"></i> 工具介绍</h3>
+                            <p>Grok是由Elon
+                                Musk创立的xAI公司于2024年推出的AI助手。作为X平台（原Twitter）的核心AI功能，Grok具备实时网络搜索能力，能够获取最新信息并提供准确回答。</p>
+                            <p>Grok以其幽默风趣、直言不讳的交互风格著称，与其他AI助手的"礼貌克制"形成鲜明对比。它能够回答一些其他AI拒绝回答的问题，同时保持了对事实准确性的追求。Grok还支持多模态输入，可以理解和处理图像内容。
+                            </p>
+                            <p>2024年底，xAI推出了Grok 2和Grok 2 mini版本，进一步提升了推理能力和响应速度，使其在AI助手竞争中占据了独特位置。</p>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="info-card">
+                            <h3><i class="linecons-star"></i> 主要功能</h3>
+                            <ul class="feature-list">
+                                <li>实时网络搜索，获取最新信息</li>
+                                <li>X平台深度集成，分析推文趋势</li>
+                                <li>多模态输入，支持图像理解</li>
+                                <li>幽默风趣的对话风格</li>
+                                <li>代码编写和调试辅助</li>
+                                <li>文章写作和内容创作</li>
+                                <li>多语言支持</li>
+                                <li>图像生成功能（通过Aurora模型）</li>
+                            </ul>
+                        </div>
+
+                        <!-- Use Cases -->
+                        <div class="info-card">
+                            <h3><i class="linecons-lightbulb"></i> 典型应用场景</h3>
+                            <p><strong>1. 实时信息查询</strong></p>
+                            <p>需要了解最新新闻、体育赛事比分、股票价格等实时信息时，Grok可以直接从网络获取最新数据，而不受训练数据截止日期的限制。</p>
+
+                            <p><strong>2. 社交媒体趋势分析</strong></p>
+                            <p>作为X平台的原生AI，Grok可以分析推文趋势、热门话题，帮助用户了解社交媒体上的热点讨论。</p>
+
+                            <p><strong>3. 创意写作与娱乐</strong></p>
+                            <p>Grok的幽默风格使其特别适合创作有趣的内容、脑洞大开的故事，或者进行轻松的对话娱乐。</p>
+
+                            <p><strong>4. 编程辅助</strong></p>
+                            <p>Grok同样具备强大的代码生成和调试能力，可以帮助开发者解决编程问题。</p>
+                        </div>
+
+                        <!-- Pricing -->
+                        <div class="info-card">
+                            <h3><i class="linecons-tag"></i> 价格方案</h3>
+                            <p><strong>X Premium+</strong> - $16/月 或 $168/年</p>
+                            <ul class="feature-list">
+                                <li>完整Grok访问权限</li>
+                                <li>Grok 2高级模型</li>
+                                <li>图像生成功能</li>
+                                <li>X平台所有Premium功能</li>
+                                <li>无广告体验</li>
+                            </ul>
+
+                            <p><strong>X Premium</strong> - $8/月</p>
+                            <ul class="feature-list">
+                                <li>基础Grok访问</li>
+                                <li>使用限制较多</li>
+                                <li>X平台基础Premium功能</li>
+                            </ul>
+
+                            <p><strong>免费用户</strong></p>
+                            <ul class="feature-list">
+                                <li>2024年12月起提供有限免费访问</li>
+                                <li>每日使用次数有限制</li>
+                            </ul>
+                        </div>
+
+                        <!-- Pros and Cons -->
+                        <div class="info-card">
+                            <h3><i class="linecons-params"></i> 优缺点分析</h3>
+                            <p><strong>主要优势：</strong></p>
+                            <ul class="feature-list">
+                                <li><strong>实时信息</strong> - 能够搜索并获取最新的网络信息</li>
+                                <li><strong>独特个性</strong> - 幽默风趣的回答风格，更有趣味性</li>
+                                <li><strong>X平台集成</strong> - 可以分析推文和社交媒体趋势</li>
+                                <li><strong>少限制</strong> - 在某些话题上比其他AI更开放</li>
+                                <li><strong>多模态</strong> - 支持图像输入和理解</li>
+                            </ul>
+
+                            <p><strong>明显不足：</strong></p>
+                            <ul class="feature-list">
+                                <li><strong>需要订阅</strong> - 完整功能需要X Premium+订阅</li>
+                                <li><strong>平台依赖</strong> - 主要通过X平台使用，独立性较低</li>
+                                <li><strong>功能相对较新</strong> - 相比ChatGPT等成熟产品，生态系统还在建设中</li>
+                                <li><strong>可用性</strong> - 在某些地区可能无法使用</li>
+                            </ul>
+                        </div>
+
+                        <!-- FAQ -->
+                        <div class="info-card">
+                            <h3><i class="linecons-help"></i> 常见问题</h3>
+                            <p><strong>Q1: Grok免费吗？</strong></p>
+                            <p>A: 2024年12月起，Grok开始向免费用户提供有限访问。完整功能需要订阅X Premium（$8/月）或X Premium+（$16/月）。</p>
+
+                            <p><strong>Q2: Grok和ChatGPT有什么区别？</strong></p>
+                            <p>A: Grok的主要区别在于：1) 具备实时网络搜索能力；2) 深度集成X平台，可分析推文；3) 更幽默直接的交互风格；4) 在某些话题上限制更少。</p>
+
+                            <p><strong>Q3: Grok可以生成图像吗？</strong></p>
+                            <p>A: 是的，Grok 2配备了Aurora图像生成模型，Premium+用户可以使用图像生成功能。</p>
+
+                            <p><strong>Q4: 如何使用Grok？</strong></p>
+                            <p>A: 可以通过X平台（原Twitter）网页版或APP使用Grok，也可以直接访问grok.x.ai网站。</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <!-- Tool Info -->
+                        <div class="info-card">
+                            <h3><i class="linecons-cog"></i> 工具信息</h3>
+                            <table class="table">
+                                <tr>
+                                    <td><strong>官方网站</strong></td>
+                                    <td><a href="https://grok.x.ai/" target="_blank">grok.x.ai</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>开发公司</strong></td>
+                                    <td>xAI</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>工具类型</strong></td>
+                                    <td>AI助手</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>价格模式</strong></td>
+                                    <td>付费订阅</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>发布时间</strong></td>
+                                    <td>2024年</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- Related Tools -->
+                        <div class="info-card">
+                            <h3><i class="linecons-thumbs-up"></i> 相关工具</h3>
+                            <div class="related-tools">
+                                <a href="chatgpt.html" class="related-tool">
+                                    <img src="../../assets/images/logos/chatgpt.png" alt="ChatGPT">
+                                    <div>
+                                        <strong>ChatGPT</strong><br>
+                                        <small>最受欢迎的AI对话助手</small>
+                                    </div>
+                                </a>
+                                <a href="claude.html" class="related-tool">
+                                    <img src="../../assets/images/logos/claude.png" alt="Claude">
+                                    <div>
+                                        <strong>Claude</strong><br>
+                                        <small>长文理解与方案撰写见长</small>
+                                    </div>
+                                </a>
+                                <a href="perplexity.html" class="related-tool">
+                                    <img src="../../assets/images/logos/perplexity.png" alt="Perplexity">
+                                    <div>
+                                        <strong>Perplexity</strong><br>
+                                        <small>带引用的AI搜索问答</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="main-footer sticky footer-type-1">
+                <div class="footer-inner">
+                    <div class="footer-text">
+                        &copy; 2025
+                        <a href="../about.html"><strong>AINAV.ART</strong></a> design by <a
+                            href="https://www.viggoz.com" target="_blank"><strong>crash-you</strong></a>
+                    </div>
+                    <div class="go-up">
+                        <a href="#" rel="go-top">
+                            <i class="fa-angle-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/TweenMax.min.js"></script>
+    <script src="../../assets/js/resizeable.js"></script>
+    <script src="../../assets/js/joinable.js"></script>
+    <script src="../../assets/js/xenon-api.js"></script>
+    <script src="../../assets/js/xenon-toggles.js"></script>
+    <script src="../../assets/js/xenon-custom.js"></script>
+</body>
+
+</html>

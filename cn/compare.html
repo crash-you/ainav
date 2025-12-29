@@ -1,0 +1,824 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4770465793767896"
+         crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="AINAV.ART编辑团队" />
+    <title>AI工具对比 - 全面比较分析助您选择最适合的AI工具 | AINAV.ART</title>
+    <meta name="keywords" content="AI工具对比,ChatGPT vs Claude,Midjourney vs DALL-E,AI工具比较,AI工具选择,最好的AI工具,AI工具推荐,AI工具评测对比">
+    <meta name="description" content="专业的AI工具对比平台，提供ChatGPT、Claude、Midjourney等热门AI工具的详细对比分析。从功能、价格、性能等多维度比较，帮助您选择最适合的AI工具。">
+    <link rel="shortcut icon" href="../assets/images/AInavLogo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
+    <link rel="stylesheet" href="../assets/css/fonts/linecons/css/linecons.css">
+    <link rel="stylesheet" href="../assets/css/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/xenon-core.css">
+    <link rel="stylesheet" href="../assets/css/xenon-components.css">
+    <link rel="stylesheet" href="../assets/css/xenon-skins.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    
+    <!-- 自定义样式 -->
+    <style>
+        .compare-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .compare-hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .compare-hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .tool-selector {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .tool-selector h3 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .tool-select-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .tool-select-box {
+            position: relative;
+        }
+        .tool-select-box label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+            font-weight: bold;
+        }
+        .tool-select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+        .tool-select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        .compare-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .compare-btn:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .compare-table-container {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .compare-table th {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: left;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 2px solid #dee2e6;
+        }
+        .compare-table td {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .compare-table tr:hover {
+            background: #f8f9fa;
+        }
+        .tool-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .feature-name {
+            font-weight: bold;
+            color: #555;
+        }
+        .check {
+            color: #28a745;
+            font-size: 24px;
+        }
+        .cross {
+            color: #dc3545;
+            font-size: 24px;
+        }
+        .partial {
+            color: #ffc107;
+            font-size: 24px;
+        }
+        .winner-badge {
+            display: inline-block;
+            background: #ffd700;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .quick-compare {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .quick-compare-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .quick-compare-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        .quick-compare-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .quick-compare-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .vs-badge {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0 5px;
+        }
+        .score-bar {
+            background: #e9ecef;
+            height: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+        .score-fill {
+            background: linear-gradient(90deg, #28a745, #20c997);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            color: white;
+            font-weight: bold;
+            transition: width 0.5s ease;
+        }
+        .category-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .category-tab {
+            padding: 10px 20px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .category-tab:hover {
+            border-color: #667eea;
+        }
+        .category-tab.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        .recommendation-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+        .recommendation-box h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .recommendation-box p {
+            font-size: 16px;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+        .tool-card-compare {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .tool-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            border-radius: 10px;
+            font-size: 40px;
+        }
+        .tool-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .tool-score {
+            font-size: 32px;
+            font-weight: bold;
+            color: #667eea;
+            margin: 10px 0;
+        }
+        .tool-price {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBG1P2RHMC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GBG1P2RHMC');
+    </script>
+</head>
+
+<body class="page-body">
+    <div class="page-container">
+        <!-- 侧边栏 -->
+        <div class="sidebar-menu toggle-others fixed">
+            <div class="sidebar-menu-inner">
+                <header class="logo-env">
+                    <div class="logo">
+                        <a href="index.html" class="logo-expanded">
+                            <img src="../assets/images/AInavLogo.png" width="100%" alt="" />
+                        </a>
+                        <a href="index.html" class="logo-collapsed">
+                            <img src="../assets/images/AInavLogo.png" width="40" alt="" />
+                        </a>
+                    </div>
+                    <div class="mobile-menu-toggle visible-xs">
+                        <a href="#" data-toggle="mobile-menu">
+                            <i class="fa-bars"></i>
+                        </a>
+                    </div>
+                </header>
+                
+                <ul id="main-menu" class="main-menu">
+                    <li>
+                        <a href="index.html">
+                            <i class="linecons-star"></i>
+                            <span class="title">首页</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="compare.html">
+                            <i class="linecons-params"></i>
+                            <span class="title">工具对比</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 主内容区 -->
+        <div class="main-content">
+            <!-- 顶部导航 -->
+            <nav class="navbar user-info-navbar" role="navigation">
+                <ul class="user-info-menu left-links list-inline list-unstyled">
+                    <li class="hidden-sm hidden-xs">
+                        <a href="#" data-toggle="sidebar">
+                            <i class="fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Hero区域 -->
+            <div class="compare-hero">
+                <div class="container">
+                    <h1>AI工具对比中心</h1>
+                    <p>专业、全面、客观的AI工具对比分析，助您做出最佳选择</p>
+                </div>
+            </div>
+            
+            <div class="container">
+                <!-- 工具选择器 -->
+                <div class="tool-selector">
+                    <h3>选择要对比的AI工具</h3>
+                    <div class="tool-select-grid">
+                        <div class="tool-select-box">
+                            <label>工具 1</label>
+                            <select class="tool-select" id="tool1">
+                                <option value="">请选择...</option>
+                                <optgroup label="AI写作">
+                                    <option value="chatgpt">ChatGPT</option>
+                                    <option value="claude">Claude</option>
+                                    <option value="gemini">Google Gemini</option>
+                                    <option value="kimi">Kimi</option>
+                                </optgroup>
+                                <optgroup label="AI绘画">
+                                    <option value="midjourney">Midjourney</option>
+                                    <option value="dalle">DALL-E 3</option>
+                                    <option value="stable-diffusion">Stable Diffusion</option>
+                                    <option value="leonardo">Leonardo AI</option>
+                                </optgroup>
+                                <optgroup label="AI视频">
+                                    <option value="runway">Runway</option>
+                                    <option value="pika">Pika</option>
+                                    <option value="sora">Sora</option>
+                                </optgroup>
+                                <optgroup label="AI音频">
+                                    <option value="suno">Suno</option>
+                                    <option value="elevenlabs">ElevenLabs</option>
+                                    <option value="stable-audio">Stable Audio</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="tool-select-box">
+                            <label>工具 2</label>
+                            <select class="tool-select" id="tool2">
+                                <option value="">请选择...</option>
+                                <optgroup label="AI写作">
+                                    <option value="chatgpt">ChatGPT</option>
+                                    <option value="claude">Claude</option>
+                                    <option value="gemini">Google Gemini</option>
+                                    <option value="kimi">Kimi</option>
+                                </optgroup>
+                                <optgroup label="AI绘画">
+                                    <option value="midjourney">Midjourney</option>
+                                    <option value="dalle">DALL-E 3</option>
+                                    <option value="stable-diffusion">Stable Diffusion</option>
+                                    <option value="leonardo">Leonardo AI</option>
+                                </optgroup>
+                                <optgroup label="AI视频">
+                                    <option value="runway">Runway</option>
+                                    <option value="pika">Pika</option>
+                                    <option value="sora">Sora</option>
+                                </optgroup>
+                                <optgroup label="AI音频">
+                                    <option value="suno">Suno</option>
+                                    <option value="elevenlabs">ElevenLabs</option>
+                                    <option value="stable-audio">Stable Audio</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="tool-select-box">
+                            <label>工具 3（可选）</label>
+                            <select class="tool-select" id="tool3">
+                                <option value="">请选择...</option>
+                                <optgroup label="AI写作">
+                                    <option value="chatgpt">ChatGPT</option>
+                                    <option value="claude">Claude</option>
+                                    <option value="gemini">Google Gemini</option>
+                                    <option value="kimi">Kimi</option>
+                                </optgroup>
+                                <optgroup label="AI绘画">
+                                    <option value="midjourney">Midjourney</option>
+                                    <option value="dalle">DALL-E 3</option>
+                                    <option value="stable-diffusion">Stable Diffusion</option>
+                                    <option value="leonardo">Leonardo AI</option>
+                                </optgroup>
+                                <optgroup label="AI视频">
+                                    <option value="runway">Runway</option>
+                                    <option value="pika">Pika</option>
+                                    <option value="sora">Sora</option>
+                                </optgroup>
+                                <optgroup label="AI音频">
+                                    <option value="suno">Suno</option>
+                                    <option value="elevenlabs">ElevenLabs</option>
+                                    <option value="stable-audio">Stable Audio</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="compare-btn" onclick="compareTools()">开始对比</button>
+                    </div>
+                </div>
+                
+                <!-- 热门对比 -->
+                <h2 style="margin: 40px 0 30px; color: #333;">🔥 热门对比</h2>
+                <div class="quick-compare">
+                    <div class="quick-compare-card" onclick="quickCompare('chatgpt', 'claude')">
+                        <h3>ChatGPT <span class="vs-badge">VS</span> Claude</h3>
+                        <p>最受欢迎的两大AI对话助手对比，看看谁更适合您的需求。ChatGPT功能全面，Claude长文本处理更强。</p>
+                    </div>
+                    <div class="quick-compare-card" onclick="quickCompare('midjourney', 'dalle')">
+                        <h3>Midjourney <span class="vs-badge">VS</span> DALL-E 3</h3>
+                        <p>顶级AI绘画工具对决，Midjourney艺术性更强，DALL-E 3理解力更准确。</p>
+                    </div>
+                    <div class="quick-compare-card" onclick="quickCompare('chatgpt', 'gemini')">
+                        <h3>ChatGPT <span class="vs-badge">VS</span> Gemini</h3>
+                        <p>OpenAI vs Google的AI助手之争，各有千秋，看看哪个更适合您。</p>
+                    </div>
+                    <div class="quick-compare-card" onclick="quickCompare('midjourney', 'stable-diffusion')">
+                        <h3>Midjourney <span class="vs-badge">VS</span> Stable Diffusion</h3>
+                        <p>商业vs开源的选择，Midjourney更易用，Stable Diffusion更自由。</p>
+                    </div>
+                    <div class="quick-compare-card" onclick="quickCompare('suno', 'elevenlabs')">
+                        <h3>Suno <span class="vs-badge">VS</span> ElevenLabs</h3>
+                        <p>AI音频生成工具对比，Suno擅长音乐创作，ElevenLabs专注语音合成。</p>
+                    </div>
+                    <div class="quick-compare-card" onclick="quickCompare('runway', 'pika')">
+                        <h3>Runway <span class="vs-badge">VS</span> Pika</h3>
+                        <p>AI视频生成平台比较，Runway功能更全面，Pika更适合快速创作。</p>
+                    </div>
+                </div>
+                
+                <!-- 分类标签 -->
+                <div class="category-tabs">
+                    <div class="category-tab active" onclick="filterCategory('all')">全部</div>
+                    <div class="category-tab" onclick="filterCategory('writing')">AI写作</div>
+                    <div class="category-tab" onclick="filterCategory('image')">AI绘画</div>
+                    <div class="category-tab" onclick="filterCategory('video')">AI视频</div>
+                    <div class="category-tab" onclick="filterCategory('audio')">AI音频</div>
+                    <div class="category-tab" onclick="filterCategory('coding')">AI编程</div>
+                </div>
+                
+                <!-- 对比结果区域 -->
+                <div id="compareResult" style="display: none;">
+                    <!-- 工具卡片 -->
+                    <div class="tool-select-grid" style="margin-bottom: 40px;">
+                        <div class="tool-card-compare" id="tool1-card">
+                            <div class="tool-logo">🤖</div>
+                            <div class="tool-name">工具1</div>
+                            <div class="tool-score">9.5</div>
+                            <div class="tool-price">$20/月</div>
+                        </div>
+                        <div class="tool-card-compare" id="tool2-card">
+                            <div class="tool-logo">🤖</div>
+                            <div class="tool-name">工具2</div>
+                            <div class="tool-score">9.2</div>
+                            <div class="tool-price">$30/月</div>
+                        </div>
+                        <div class="tool-card-compare" id="tool3-card" style="display: none;">
+                            <div class="tool-logo">🤖</div>
+                            <div class="tool-name">工具3</div>
+                            <div class="tool-score">8.8</div>
+                            <div class="tool-price">免费</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 详细对比表 -->
+                    <div class="compare-table-container">
+                        <table class="compare-table" id="compareTable">
+                            <!-- 动态生成内容 -->
+                        </table>
+                    </div>
+                    
+                    <!-- 推荐建议 -->
+                    <div class="recommendation-box" id="recommendation">
+                        <h3>💡 我们的建议</h3>
+                        <p id="recommendationText">根据对比结果，我们将为您提供专业的选择建议...</p>
+                    </div>
+                </div>
+                
+                <!-- 对比指南 -->
+                <div style="margin-top: 60px;">
+                    <h2 style="color: #333; margin-bottom: 30px;">📚 AI工具选择指南</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">选择AI写作工具时考虑</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>上下文长度需求</li>
+                                        <li>语言支持范围</li>
+                                        <li>创意vs准确性偏好</li>
+                                        <li>API接口需求</li>
+                                        <li>预算限制</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">选择AI绘画工具时考虑</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>艺术风格偏好</li>
+                                        <li>图像质量要求</li>
+                                        <li>生成速度需求</li>
+                                        <li>商用授权需求</li>
+                                        <li>学习曲线接受度</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 页脚 -->
+            <footer class="main-footer sticky footer-type-1">
+                <div class="footer-inner">
+                    <div class="footer-text">
+                        &copy; 2025 <strong>AINAV.ART</strong> - AI工具导航专家
+                    </div>
+                    <div class="go-up">
+                        <a href="#" rel="go-top">
+                            <i class="fa-angle-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <!-- 底部脚本 -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/TweenMax.min.js"></script>
+    <script src="../assets/js/resizeable.js"></script>
+    <script src="../assets/js/joinable.js"></script>
+    <script src="../assets/js/xenon-api.js"></script>
+    <script src="../assets/js/xenon-toggles.js"></script>
+    <script src="../assets/js/xenon-custom.js"></script>
+    
+    <script>
+        // 工具数据库
+        const toolsData = {
+            'chatgpt': {
+                name: 'ChatGPT',
+                icon: '🤖',
+                score: 9.5,
+                price: '$20/月',
+                features: {
+                    '响应速度': { score: 9, desc: '快速响应' },
+                    '准确性': { score: 9, desc: '高准确率' },
+                    '创意能力': { score: 10, desc: '极强创意' },
+                    '多语言支持': { score: 10, desc: '100+语言' },
+                    '上下文长度': { score: 8, desc: '128K tokens' },
+                    'API支持': { score: 10, desc: '完整API' },
+                    '插件生态': { score: 10, desc: '丰富插件' },
+                    '易用性': { score: 9, desc: '简单易用' },
+                    '价格': { score: 8, desc: '$20/月' }
+                }
+            },
+            'claude': {
+                name: 'Claude',
+                icon: '🧠',
+                score: 9.2,
+                price: '$20/月',
+                features: {
+                    '响应速度': { score: 8, desc: '较快' },
+                    '准确性': { score: 10, desc: '极高准确' },
+                    '创意能力': { score: 8, desc: '良好创意' },
+                    '多语言支持': { score: 9, desc: '多语言' },
+                    '上下文长度': { score: 10, desc: '200K tokens' },
+                    'API支持': { score: 8, desc: '有API' },
+                    '插件生态': { score: 6, desc: '较少插件' },
+                    '易用性': { score: 9, desc: '易于使用' },
+                    '价格': { score: 8, desc: '$20/月' }
+                }
+            },
+            'midjourney': {
+                name: 'Midjourney',
+                icon: '🎨',
+                score: 9.8,
+                price: '$10-60/月',
+                features: {
+                    '图像质量': { score: 10, desc: '顶级质量' },
+                    '艺术风格': { score: 10, desc: '风格多样' },
+                    '生成速度': { score: 8, desc: '较快' },
+                    '易用性': { score: 7, desc: '需Discord' },
+                    '参数控制': { score: 9, desc: '丰富参数' },
+                    '商用授权': { score: 9, desc: '付费可商用' },
+                    '社区支持': { score: 10, desc: '活跃社区' },
+                    '价格': { score: 7, desc: '$10-60/月' }
+                }
+            },
+            'dalle': {
+                name: 'DALL-E 3',
+                icon: '🖼️',
+                score: 9.0,
+                price: '$20/月',
+                features: {
+                    '图像质量': { score: 9, desc: '高质量' },
+                    '艺术风格': { score: 8, desc: '多种风格' },
+                    '生成速度': { score: 9, desc: '快速' },
+                    '易用性': { score: 10, desc: '非常简单' },
+                    '参数控制': { score: 7, desc: '基础参数' },
+                    '商用授权': { score: 9, desc: '可商用' },
+                    '社区支持': { score: 8, desc: '良好' },
+                    '价格': { score: 8, desc: 'ChatGPT Plus' }
+                }
+            }
+        };
+        
+        // 对比工具函数
+        function compareTools() {
+            const tool1 = document.getElementById('tool1').value;
+            const tool2 = document.getElementById('tool2').value;
+            const tool3 = document.getElementById('tool3').value;
+            
+            if (!tool1 || !tool2) {
+                alert('请至少选择两个工具进行对比');
+                return;
+            }
+            
+            if (tool1 === tool2 || (tool3 && (tool1 === tool3 || tool2 === tool3))) {
+                alert('请选择不同的工具进行对比');
+                return;
+            }
+            
+            displayComparison([tool1, tool2, tool3].filter(Boolean));
+        }
+        
+        // 快速对比
+        function quickCompare(tool1, tool2) {
+            document.getElementById('tool1').value = tool1;
+            document.getElementById('tool2').value = tool2;
+            document.getElementById('tool3').value = '';
+            displayComparison([tool1, tool2]);
+        }
+        
+        // 显示对比结果
+        function displayComparison(tools) {
+            const resultDiv = document.getElementById('compareResult');
+            resultDiv.style.display = 'block';
+            
+            // 更新工具卡片
+            tools.forEach((tool, index) => {
+                const cardId = `tool${index + 1}-card`;
+                const card = document.getElementById(cardId);
+                if (toolsData[tool]) {
+                    card.style.display = 'block';
+                    card.querySelector('.tool-logo').textContent = toolsData[tool].icon;
+                    card.querySelector('.tool-name').textContent = toolsData[tool].name;
+                    card.querySelector('.tool-score').textContent = toolsData[tool].score;
+                    card.querySelector('.tool-price').textContent = toolsData[tool].price;
+                } else {
+                    if (index < 2) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+            
+            // 生成对比表
+            generateCompareTable(tools);
+            
+            // 生成推荐
+            generateRecommendation(tools);
+            
+            // 滚动到结果
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // 生成对比表
+        function generateCompareTable(tools) {
+            const table = document.getElementById('compareTable');
+            const toolsInfo = tools.map(t => toolsData[t]).filter(Boolean);
+            
+            if (toolsInfo.length === 0) return;
+            
+            // 获取所有特性
+            const allFeatures = new Set();
+            toolsInfo.forEach(tool => {
+                Object.keys(tool.features).forEach(f => allFeatures.add(f));
+            });
+            
+            let html = '<thead><tr><th>对比项目</th>';
+            toolsInfo.forEach(tool => {
+                html += `<th class="tool-header">${tool.name}</th>`;
+            });
+            html += '</tr></thead><tbody>';
+            
+            allFeatures.forEach(feature => {
+                html += `<tr><td class="feature-name">${feature}</td>`;
+                let maxScore = 0;
+                let scores = [];
+                
+                toolsInfo.forEach(tool => {
+                    const f = tool.features[feature];
+                    if (f) {
+                        scores.push(f.score);
+                        maxScore = Math.max(maxScore, f.score);
+                    } else {
+                        scores.push(0);
+                    }
+                });
+                
+                toolsInfo.forEach((tool, index) => {
+                    const f = tool.features[feature];
+                    if (f) {
+                        const isWinner = f.score === maxScore && maxScore > 0;
+                        html += `<td>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: ${f.score * 10}%">
+                                    ${f.score}/10
+                                </div>
+                            </div>
+                            <small>${f.desc}</small>
+                            ${isWinner ? '<span class="winner-badge">最佳</span>' : ''}
+                        </td>`;
+                    } else {
+                        html += '<td>-</td>';
+                    }
+                });
+                html += '</tr>';
+            });
+            
+            html += '</tbody>';
+            table.innerHTML = html;
+        }
+        
+        // 生成推荐
+        function generateRecommendation(tools) {
+            const recommendationText = document.getElementById('recommendationText');
+            const toolsInfo = tools.map(t => toolsData[t]).filter(Boolean);
+            
+            if (toolsInfo.length === 0) return;
+            
+            // 计算总分
+            const scores = toolsInfo.map(tool => ({
+                name: tool.name,
+                totalScore: Object.values(tool.features).reduce((sum, f) => sum + f.score, 0) / Object.keys(tool.features).length
+            }));
+            
+            scores.sort((a, b) => b.totalScore - a.totalScore);
+            
+            let text = `基于我们的综合分析，`;
+            if (scores[0].totalScore - scores[1].totalScore > 0.5) {
+                text += `<strong>${scores[0].name}</strong> 在整体表现上明显领先，是我们的首选推荐。`;
+            } else {
+                text += `<strong>${scores[0].name}</strong> 和 <strong>${scores[1].name}</strong> 各有优势，选择取决于您的具体需求。`;
+            }
+            
+            // 添加具体建议
+            if (tools.includes('chatgpt') && tools.includes('claude')) {
+                text += ' 如果您需要更强的创意和插件支持，选择ChatGPT；如果您需要处理长文档和更高的准确性，选择Claude。';
+            } else if (tools.includes('midjourney') && tools.includes('dalle')) {
+                text += ' 如果您追求艺术性和专业质量，选择Midjourney；如果您需要简单易用和快速生成，选择DALL-E 3。';
+            }
+            
+            recommendationText.innerHTML = text;
+        }
+        
+        // 分类筛选
+        function filterCategory(category) {
+            document.querySelectorAll('.category-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            // 这里可以添加实际的筛选逻辑
+        }
+    </script>
+</body>
+</html>

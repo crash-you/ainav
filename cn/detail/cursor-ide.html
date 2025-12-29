@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4770465793767896"
+        crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="crash-you" />
+    <title>Cursor详细评测 - AI驱动的智能代码编辑器 | 使用指南 | AINAV.ART</title>
+    <meta name="keywords" content="Cursor,Cursor IDE,AI代码编辑器,AI编程,VS Code AI,GPT-4编程,代码补全,AI开发工具,智能编程助手">
+    <meta name="description" content="Cursor详细评测和使用指南 - 基于VS Code构建的AI代码编辑器，深度集成GPT-4等大语言模型，提供智能代码补全、重构和调试功能。">
+    <link rel="shortcut icon" href="../../assets/images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
+    <link rel="stylesheet" href="../../assets/css/fonts/linecons/css/linecons.css">
+    <link rel="stylesheet" href="../../assets/css/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/xenon-core.css">
+    <link rel="stylesheet" href="../../assets/css/xenon-components.css">
+    <link rel="stylesheet" href="../../assets/css/xenon-skins.css">
+    <link rel="stylesheet" href="../../assets/css/nav.css">
+    <script src="../../assets/js/jquery-1.11.1.min.js"></script>
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.ainav.art/cn/detail/cursor-ide.html">
+    <meta property="og:title" content="Cursor详细评测 - AI驱动的智能代码编辑器">
+    <meta property="og:description" content="Cursor详细评测和使用指南 - 基于VS Code构建的AI代码编辑器，深度集成GPT-4等大语言模型。">
+    <meta property="og:image" content="https://www.ainav.art/assets/images/logos/cursor-ide.png">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBG1P2RHMC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-GBG1P2RHMC');
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Cursor",
+      "description": "Cursor是基于VS Code构建的AI代码编辑器，深度集成了GPT-4等大语言模型，能够理解整个代码库的上下文，提供智能代码补全、重构建议和调试功能。",
+      "url": "https://cursor.sh/",
+      "applicationCategory": "AI编程工具",
+      "operatingSystem": "Windows, macOS, Linux",
+      "offers": {
+        "@type": "Offer",
+        "price": "20",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <style>
+        .tool-header {
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+
+        .tool-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            background: white;
+            padding: 10px;
+        }
+
+        .tool-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tool-subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .tool-website-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .tool-website-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-card h3 {
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #0f0f23;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            color: #0f0f23;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .back-btn {
+            background: #0f0f23;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .back-btn:hover {
+            background: #1a1a3e;
+            color: white;
+            text-decoration: none;
+        }
+
+        .related-tool {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .related-tool:hover {
+            background: #f8f9fa;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .related-tool img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body class="page-body">
+    <div class="page-container">
+        <div class="sidebar-menu toggle-others fixed">
+            <div class="sidebar-menu-inner">
+                <header class="logo-env">
+                    <div class="logo">
+                        <a href="../index.html" class="logo-expanded"><img src="../../assets/images/AInavLogo.png"
+                                width="100%" alt="AINAV.ART Logo" /></a>
+                        <a href="../index.html" class="logo-collapsed"><img src="../../assets/images/AInavLogo.png"
+                                width="40" alt="AINAV.ART Logo" /></a>
+                    </div>
+                </header>
+                <ul id="main-menu" class="main-menu">
+                    <li><a href="../index.html"><i class="linecons-home"></i><span class="title">返回首页</span></a></li>
+                    <li><a href="../index.html#热门AI新工具"><i class="linecons-fire"></i><span
+                                class="title">热门AI新工具</span></a></li>
+                    <li><a href="../about.html"><i class="linecons-heart"></i><span class="tooltip-blue">关于本站</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <nav class="navbar user-info-navbar" role="navigation">
+                <ul class="user-info-menu left-links list-inline list-unstyled">
+                    <li class="hidden-sm hidden-xs"><a href="#" data-toggle="sidebar"><i class="fa-bars"></i></a></li>
+                    <li class="dropdown hover-line language-switcher">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img
+                                src="../../assets/images/flags/flag-cn.png" alt="flag-cn" /> Chinese</a>
+                        <ul class="dropdown-menu languages">
+                            <li><a href="../../en/detail/cursor-ide.html"><img
+                                        src="../../assets/images/flags/flag-us.png" alt="flag-us" /> English</a></li>
+                            <li class="active"><a href="#"><img src="../../assets/images/flags/flag-cn.png"
+                                        alt="flag-cn" /> Chinese</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="tool-header">
+                <div class="container text-center">
+                    <img src="../../assets/images/logos/cursor-ide.png" alt="Cursor Logo" class="tool-logo">
+                    <h1 class="tool-title">Cursor</h1>
+                    <p class="tool-subtitle">AI驱动的智能代码编辑器</p>
+                    <a href="https://cursor.sh/" target="_blank" class="tool-website-btn"><i
+                            class="fa-external-link"></i> 访问官网</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <a href="../index.html" class="back-btn"><i class="fa-arrow-left"></i> 返回工具列表</a>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="info-card">
+                            <h3><i class="linecons-doc"></i> 工具介绍</h3>
+                            <p>Cursor是2024年最受欢迎的AI代码编辑器之一，基于VS
+                                Code构建，深度集成了GPT-4、Claude等大语言模型。它能够理解整个代码库的上下文，提供智能代码补全、重构建议、Bug修复和代码解释。</p>
+                            <p>Cursor让开发者能够用自然语言描述需求，AI自动生成对应代码，极大提升开发效率。它支持在编辑器内直接与AI对话，询问代码问题，获取修改建议，甚至让AI直接修改代码。</p>
+                            <p>作为VS Code的分支，Cursor完全兼容VS Code的插件生态，开发者可以无缝迁移现有的开发环境和习惯。</p>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="linecons-star"></i> 主要功能</h3>
+                            <ul class="feature-list">
+                                <li>智能代码补全（Tab补全）</li>
+                                <li>自然语言生成代码</li>
+                                <li>代码库上下文理解</li>
+                                <li>内置AI对话（Cmd+K）</li>
+                                <li>代码重构建议</li>
+                                <li>Bug检测和修复</li>
+                                <li>代码解释和文档生成</li>
+                                <li>多文件编辑能力</li>
+                                <li>完全兼容VS Code插件</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="linecons-lightbulb"></i> 典型应用场景</h3>
+                            <p><strong>1. 快速原型开发</strong></p>
+                            <p>描述你想要的功能，Cursor可以快速生成初始代码，大大缩短从想法到可运行代码的时间。</p>
+
+                            <p><strong>2. 代码重构与优化</strong></p>
+                            <p>选中需要重构的代码，用自然语言描述你的重构目标，Cursor会给出具体的修改建议并可直接应用。</p>
+
+                            <p><strong>3. 学习新技术</strong></p>
+                            <p>在学习新语言或框架时，可以随时询问代码含义，获取最佳实践建议，加速学习过程。</p>
+
+                            <p><strong>4. 调试与问题解决</strong></p>
+                            <p>遇到错误时，可以让Cursor分析错误信息，给出修复建议，甚至直接修复代码。</p>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="linecons-tag"></i> 价格方案</h3>
+                            <p><strong>免费版（Hobby）</strong></p>
+                            <ul class="feature-list">
+                                <li>每月2000次代码补全</li>
+                                <li>每月50次慢速高级请求</li>
+                                <li>基础功能完整</li>
+                            </ul>
+
+                            <p><strong>Pro版</strong> - $20/月</p>
+                            <ul class="feature-list">
+                                <li>无限代码补全</li>
+                                <li>每月500次快速高级请求</li>
+                                <li>无限慢速高级请求</li>
+                                <li>GPT-4和Claude访问</li>
+                            </ul>
+
+                            <p><strong>Business版</strong> - $40/用户/月</p>
+                            <ul class="feature-list">
+                                <li>Pro版所有功能</li>
+                                <li>团队管理功能</li>
+                                <li>隐私模式（代码不用于训练）</li>
+                                <li>优先支持</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="linecons-params"></i> 优缺点分析</h3>
+                            <p><strong>主要优势：</strong></p>
+                            <ul class="feature-list">
+                                <li><strong>代码库理解</strong> - 能理解整个项目上下文，生成更准确的代码</li>
+                                <li><strong>体验流畅</strong> - 与编辑器深度集成，无需切换窗口</li>
+                                <li><strong>VS Code兼容</strong> - 可无缝使用所有VS Code插件</li>
+                                <li><strong>多模型支持</strong> - 可选择GPT-4、Claude等不同模型</li>
+                                <li><strong>免费版可用</strong> - 免费版功能已经很强大</li>
+                            </ul>
+
+                            <p><strong>明显不足：</strong></p>
+                            <ul class="feature-list">
+                                <li><strong>资源占用</strong> - 相比普通编辑器占用更多内存</li>
+                                <li><strong>网络依赖</strong> - AI功能需要稳定网络连接</li>
+                                <li><strong>学习曲线</strong> - 需要时间学习AI辅助编程的最佳实践</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="info-card">
+                            <h3><i class="linecons-cog"></i> 工具信息</h3>
+                            <table class="table">
+                                <tr>
+                                    <td><strong>官方网站</strong></td>
+                                    <td><a href="https://cursor.sh/" target="_blank">cursor.sh</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>工具类型</strong></td>
+                                    <td>AI编程工具</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>价格模式</strong></td>
+                                    <td>免费版 + 付费订阅</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>支持平台</strong></td>
+                                    <td>Windows, macOS, Linux</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="linecons-thumbs-up"></i> 相关工具</h3>
+                            <div class="related-tools">
+                                <a href="lovable-dev.html" class="related-tool">
+                                    <img src="../../assets/images/logos/lovable-dev.png" alt="Lovable">
+                                    <div><strong>Lovable</strong><br><small>自然语言创建Web应用</small></div>
+                                </a>
+                                <a href="bolt-new.html" class="related-tool">
+                                    <img src="../../assets/images/logos/bolt-new.png" alt="Bolt.new">
+                                    <div><strong>Bolt.new</strong><br><small>浏览器内AI开发环境</small></div>
+                                </a>
+                                <a href="v0-vercel.html" class="related-tool">
+                                    <img src="../../assets/images/logos/v0-vercel.png" alt="v0">
+                                    <div><strong>v0 by Vercel</strong><br><small>AI生成UI组件</small></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="main-footer sticky footer-type-1">
+                <div class="footer-inner">
+                    <div class="footer-text">&copy; 2025 <a href="../about.html"><strong>AINAV.ART</strong></a></div>
+                    <div class="go-up"><a href="#" rel="go-top"><i class="fa-angle-up"></i></a></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/TweenMax.min.js"></script>
+    <script src="../../assets/js/resizeable.js"></script>
+    <script src="../../assets/js/joinable.js"></script>
+    <script src="../../assets/js/xenon-api.js"></script>
+    <script src="../../assets/js/xenon-toggles.js"></script>
+    <script src="../../assets/js/xenon-custom.js"></script>
+</body>
+
+</html>

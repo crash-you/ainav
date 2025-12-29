@@ -73,60 +73,117 @@
                     <div class="col-md-8">
                         <div class="info-card">
                             <h3><i class="linecons-doc"></i> 工具介绍</h3>
-                            <p>Luma Dream Machine是Luma AI推出的AI视频生成工具，以其出色的画质、快速的生成速度和极高的性价比而受到用户喜爱。它可以从文字描述或图片生成5秒的高质量视频，特别擅长生成3D效果和动态场景。</p>
-                            <p>Luma AI由前苹果工程师于2021年创立，最初专注于3D捕捉技术。2024年6月，Luma推出Dream Machine，迅速在AI视频领域崭露头角。与Sora、Runway等竞品相比，Dream Machine最大的优势是其**生成速度和免费额度**，普通用户每月可免费生成30个视频。</p>
-                            <p>Dream Machine最突出的特点是**3D理解能力和运动连贯性**。得益于Luma在3D视觉方面的技术积累，Dream Machine能够准确理解场景的三维结构，生成的视频具有真实的空间感和流畅的镜头运动。同时，2分钟左右的生成速度让它成为最快的AI视频工具之一。</p>
+                            <p>Luma Dream Machine是2024年最受瞩目的AI视频生成工具，能够根据文字描述或图片生成高质量的5秒视频。由前OpenAI研究员创立的Luma AI开发，Dream Machine以其<strong>超快的生成速度</strong>（2分钟）和<strong>出色的动作连贯性</strong>而闻名，是目前最接近Sora的公开可用AI视频工具。</p>
+                            
+                            <p>Luma AI成立于2021年，最初专注于3D捕捉技术。2024年6月，Luma推出Dream Machine，立即引发轰动。相比Runway Gen-2需要10-15分钟，Dream Machine只需2分钟就能生成5秒高清视频，速度提升5倍以上。更重要的是，它能生成<strong>物理规律准确、动作自然</strong>的视频，这是许多AI视频工具的难点。</p>
+                            
+                            <h4>为什么选择Dream Machine？</h4>
+                            <ul>
+                                <li><strong>生成速度最快</strong> - 2分钟生成5秒视频，业界最快</li>
+                                <li><strong>动作连贯自然</strong> - 物理规律准确，不会出现诡异变形</li>
+                                <li><strong>支持图生视频</strong> - 上传静态图，让它动起来</li>
+                                <li><strong>免费额度慷慨</strong> - 每月30次免费生成</li>
+                                <li><strong>价格实惠</strong> - $29.99/月，比Runway便宜</li>
+                                <li><strong>操作简单</strong> - 输入文字或图片即可，零门槛</li>
+                            </ul>
+                            
+                            <h4>Dream Machine vs 主流AI视频工具</h4>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr><th>特性</th><th>Dream Machine</th><th>Runway Gen-2</th><th>Pika</th><th>Sora</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td><strong>生成速度</strong></td><td>⭐⭐⭐⭐⭐ 2分钟</td><td>⭐⭐ 10-15分钟</td><td>⭐⭐⭐⭐ 3-5分钟</td><td>未知</td></tr>
+                                    <tr><td><strong>视频长度</strong></td><td>5秒</td><td>4-16秒</td><td>3秒</td><td>60秒</td></tr>
+                                    <tr><td><strong>画质</strong></td><td>⭐⭐⭐⭐ 1080p</td><td>⭐⭐⭐⭐⭐ 4K</td><td>⭐⭐⭐ 720p</td><td>⭐⭐⭐⭐⭐</td></tr>
+                                    <tr><td><strong>免费额度</strong></td><td>✅ 30次/月</td><td>❌ 无</td><td>✅ 每日限额</td><td>未发布</td></tr>
+                                    <tr><td><strong>价格</strong></td><td>$29.99/月</td><td>$35-95/月</td><td>$10-35/月</td><td>未知</td></tr>
+                                </tbody>
+                            </table>
+                            
                             <h4>发展历程</h4>
                             <ul>
                                 <li><strong>2021年</strong>：Luma AI成立，专注3D捕捉技术</li>
                                 <li><strong>2023年</strong>：推出Luma Genie 3D生成工具</li>
-                                <li><strong>2024年6月</strong>：Dream Machine正式发布</li>
+                                <li><strong>2024年6月</strong>：Dream Machine正式发布，引发轰动</li>
                                 <li><strong>2024年7月</strong>：推出图片生成视频功能</li>
                                 <li><strong>2024年9月</strong>：支持镜头控制和关键帧</li>
+                                <li><strong>2024年12月</strong>：用户突破100万，月生成量超1000万个视频</li>
                             </ul>
                         </div>
                         <div class="info-card">
                             <h3><i class="linecons-star"></i> 核心功能详解</h3>
-                            <h4>1. 文本生成视频</h4>
+                            
+                            <h4>1. 文本生成视频（Text-to-Video）⭐</h4>
                             <ul class="feature-list">
-                                <li>输入文字描述，生成5秒视频</li>
-                                <li>支持1080p高清输出</li>
-                                <li>生成速度约2分钟</li>
-                                <li>擅长3D场景和动态效果</li>
-                                <li>支持复杂的镜头运动</li>
+                                <li>输入文字描述，生成5秒高清视频（720p或1080p）</li>
+                                <li>理解复杂场景：人物、动物、自然景观、动作等</li>
+                                <li>自动生成镜头运动（推拉摇移）</li>
+                                <li>生成速度：约120秒（2分钟）</li>
+                                <li>支持各种风格：写实、动画、科幻、梦幻等</li>
                             </ul>
-                            <h4>2. 图片生成视频</h4>
+                            <p><strong>示例</strong>："一只金色拉布拉多在海滩奔跑，阳光洒在浪花上，慢动作，电影级画质"</p>
+                            
+                            <h4>2. 图片生成视频（Image-to-Video）⭐</h4>
                             <ul class="feature-list">
-                                <li>上传图片，添加运动效果</li>
-                                <li>保持图片风格和内容</li>
-                                <li>可指定运动方向</li>
-                                <li>适合制作动态海报</li>
+                                <li>上传静态图片，AI添加动态效果</li>
+                                <li>保持原图风格和构图</li>
+                                <li>可以控制运动方向和强度</li>
+                                <li>适合：产品展示、人物动画、艺术作品动态化</li>
                             </ul>
-                            <h4>3. 镜头控制</h4>
+                            <p><strong>应用</strong>：将产品照片转为360度旋转视频；让静态人像"动起来"；艺术画作添加动态效果。</p>
+                            
+                            <h4>3. 关键帧控制</h4>
                             <ul class="feature-list">
-                                <li>指定镜头运动方式</li>
-                                <li>控制运动速度和幅度</li>
-                                <li>支持多种镜头效果</li>
+                                <li>设定起始和结束帧</li>
+                                <li>AI自动生成中间过渡动画</li>
+                                <li>精确控制镜头运动轨迹</li>
                             </ul>
-                            <h4>4. 关键帧功能</h4>
+                            
+                            <h4>4. 高质量输出</h4>
                             <ul class="feature-list">
-                                <li>设置起始和结束画面</li>
-                                <li>AI自动生成中间过渡</li>
-                                <li>精确控制视频内容</li>
+                                <li>分辨率：720p标准，1080p高清（付费）</li>
+                                <li>帧率：24fps流畅播放</li>
+                                <li>格式：MP4，兼容所有平台</li>
                             </ul>
                         </div>
                         <div class="info-card">
                             <h3><i class="linecons-lightbulb"></i> 典型应用场景</h3>
-                            <h4>1. 社交媒体内容</h4>
-                            <p><strong>适合</strong>：短视频创作者、自媒体</p>
-                            <p>快速制作吸睛短视频、动态内容、创意片段。</p>
-                            <p><strong>优势</strong>：生成速度快；免费额度充足；画质好。</p>
-                            <h4>2. 产品展示</h4>
-                            <p><strong>适合</strong>：电商、营销</p>
-                            <p>产品动态展示、3D效果演示、广告素材。</p>
-                            <h4>3. 创意实验</h4>
-                            <p><strong>适合</strong>：艺术家、设计师</p>
-                            <p>概念可视化、艺术创作、视觉实验。</p>
+                            
+                            <h4>1. 社交媒体短视频 ⭐</h4>
+                            <p><strong>适用人群</strong>：自媒体、KOL、品牌营销</p>
+                            <ul>
+                                <li>Instagram Reels、TikTok、YouTube Shorts</li>
+                                <li>快速制作吸引眼球的开头动画</li>
+                                <li>产品展示视频（让产品图"动"起来）</li>
+                                <li>Meme和创意短片</li>
+                            </ul>
+                            <p><strong>案例</strong>：某美妆博主用Dream Machine将产品照片转为视频，互动率提升3倍。</p>
+                            
+                            <h4>2. 概念可视化和预演</h4>
+                            <p><strong>适用人群</strong>：导演、创意总监、广告人</p>
+                            <ul>
+                                <li>广告分镜预览</li>
+                                <li>MV概念演示</li>
+                                <li>电影场景预演</li>
+                                <li>客户提案可视化</li>
+                            </ul>
+                            
+                            <h4>3. 教育和培训视频</h4>
+                            <p><strong>适用人群</strong>：老师、培训师</p>
+                            <ul>
+                                <li>科学现象动态演示</li>
+                                <li>历史场景重现</li>
+                                <li>抽象概念可视化</li>
+                            </ul>
+                            
+                            <h4>4. 艺术创作和实验</h4>
+                            <p><strong>适用人群</strong>：艺术家、创意工作者</p>
+                            <ul>
+                                <li>将静态画作转为动态艺术</li>
+                                <li>探索超现实视觉效果</li>
+                                <li>音乐MV素材制作</li>
+                            </ul>
                         </div>
                         <div class="info-card">
                             <h3><i class="linecons-tag"></i> 价格方案</h3>
@@ -161,12 +218,24 @@
                         </div>
                         <div class="info-card">
                             <h3><i class="linecons-comment"></i> 常见问题</h3>
-                            <h4>Q: Dream Machine和Pika哪个更好？</h4>
-                            <p>A: Dream Machine生成速度更快，免费额度更多，3D效果更好；Pika编辑功能更强，易用性更好。建议两个都试试，根据需求选择。</p>
-                            <h4>Q: 免费版有水印吗？</h4>
-                            <p>A: 有。免费版生成的视频有Luma水印。付费版（$30/月起）无水印。</p>
-                            <h4>Q: Dream Machine可以商用吗？</h4>
-                            <p>A: Pro版（$100/月）提供完整商业授权。免费和Standard版需查看具体使用条款。</p>
+                            
+                            <h4>Q1: Dream Machine生成的视频可以商用吗？</h4>
+                            <p>A: <strong>Standard及以上计划（$29.99/月起）可以商用</strong>。Free免费版仅限个人非商业使用。</p>
+                            
+                            <h4>Q2: Dream Machine和Runway哪个更好？</h4>
+                            <p>A: <strong>Dream Machine速度更快</strong>（2分钟vs 10-15分钟），价格更便宜（$29.99 vs $35-95/月）。<strong>Runway功能更全</strong>（视频延长、多镜头剪辑）。如果追求效率和性价比，选Dream Machine；需要完整视频工作流，选Runway。</p>
+                            
+                            <h4>Q3: 如何提高生成质量？</h4>
+                            <p>A: ①提示词要<strong>具体详细</strong>（描述动作、场景、风格、镜头运动）；②使用<strong>高质量关键词</strong>（cinematic, smooth motion, high quality）；③<strong>英文提示词</strong>效果最好；④避免太复杂的场景；⑤多生成几次选最好的。</p>
+                            
+                            <h4>Q4: 可以生成超过5秒的视频吗？</h4>
+                            <p>A: Dream Machine本身只能生成5秒。但可以：①生成多个5秒片段，用剪辑软件拼接；②使用Runway等工具延长视频；③等待官方更新（可能会推出更长时长）。</p>
+                            
+                            <h4>Q5: Dream Machine适合做什么视频？</h4>
+                            <p>A: <strong>最适合</strong>：①短视频开头动画；②产品展示；③概念预演；④艺术实验。<strong>不适合</strong>：①长视频内容；②需要精确控制的场景；③人物对话（口型不准）；④复杂叙事。</p>
+                            
+                            <h4>Q6: Dream Machine和Pika哪个更好？</h4>
+                            <p>A: Dream Machine生成速度更快（2分钟vs 3-5分钟），免费额度更多（30次vs每日限额），画质更好（1080p vs 720p）；Pika编辑功能更强，风格化效果独特。建议：追求速度和质量选Dream Machine；追求创意风格选Pika。</p>
                         </div>
                     </div>
                     <div class="col-md-4">

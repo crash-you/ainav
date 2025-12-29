@@ -1,0 +1,827 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4770465793767896"
+         crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="AINAV.ART编辑团队" />
+    <title>AI工具使用教程大全 - 从入门到精通的完整指南 | AINAV.ART</title>
+    <meta name="keywords" content="AI工具教程,ChatGPT教程,Midjourney教程,AI绘画教程,AI写作教程,AI视频教程,Stable Diffusion教程,Claude教程,AI工具使用指南,AI提示词技巧">
+    <meta name="description" content="最全面的AI工具使用教程中心，提供ChatGPT、Midjourney、Claude等热门AI工具的详细教程。从零基础入门到高级技巧，包含视频教程、实战案例、提示词模板，助您快速掌握AI工具使用。">
+    <link rel="shortcut icon" href="../assets/images/AInavLogo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
+    <link rel="stylesheet" href="../assets/css/fonts/linecons/css/linecons.css">
+    <link rel="stylesheet" href="../assets/css/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/xenon-core.css">
+    <link rel="stylesheet" href="../assets/css/xenon-components.css">
+    <link rel="stylesheet" href="../assets/css/xenon-skins.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    
+    <!-- 自定义样式 -->
+    <style>
+        .tutorial-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .tutorial-hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .tutorial-hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .tutorial-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .category-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        .category-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .category-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .category-card p {
+            color: #666;
+            font-size: 14px;
+        }
+        .tutorial-count {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .tutorial-section {
+            margin-bottom: 60px;
+        }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+        }
+        .section-header h2 {
+            font-size: 28px;
+            color: #333;
+            margin: 0;
+        }
+        .view-all-btn {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .tutorial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .tutorial-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .tutorial-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        .tutorial-thumbnail {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+        .tutorial-content {
+            padding: 20px;
+        }
+        .tutorial-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .tutorial-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: #999;
+        }
+        .tutorial-level {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .level-beginner {
+            background: #d4edda;
+            color: #155724;
+        }
+        .level-intermediate {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .level-advanced {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .tutorial-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .tutorial-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .tutorial-tag {
+            background: #f0f0f0;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #666;
+        }
+        .featured-tutorials {
+            background: #f8f9fa;
+            padding: 40px 0;
+            margin-bottom: 50px;
+        }
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        .featured-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .featured-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: #ffd700;
+            color: #333;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .search-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .search-input {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #eee;
+            border-radius: 50px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 8px 20px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .filter-btn:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        .tutorial-roadmap {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 50px;
+        }
+        .roadmap-title {
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #333;
+        }
+        .roadmap-steps {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding: 20px 0;
+        }
+        .roadmap-steps::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #ddd;
+            z-index: 0;
+        }
+        .roadmap-step {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .roadmap-step:hover {
+            border-color: #667eea;
+            transform: scale(1.1);
+        }
+        .roadmap-step.completed {
+            background: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+        .roadmap-step-number {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .roadmap-step-label {
+            font-size: 12px;
+            margin-top: 5px;
+            text-align: center;
+            position: absolute;
+            bottom: -30px;
+            width: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBG1P2RHMC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GBG1P2RHMC');
+    </script>
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "AI工具使用教程",
+      "description": "全面的AI工具使用教程集合，包含ChatGPT、Midjourney等热门工具的详细指南",
+      "url": "https://www.ainav.art/cn/tutorials.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "AINAV.ART",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.ainav.art/assets/images/AInavLogo.png"
+        }
+      }
+    }
+    </script>
+</head>
+
+<body class="page-body">
+    <div class="page-container">
+        <!-- 侧边栏 -->
+        <div class="sidebar-menu toggle-others fixed">
+            <div class="sidebar-menu-inner">
+                <header class="logo-env">
+                    <div class="logo">
+                        <a href="index.html" class="logo-expanded">
+                            <img src="../assets/images/AInavLogo.png" width="100%" alt="" />
+                        </a>
+                        <a href="index.html" class="logo-collapsed">
+                            <img src="../assets/images/AInavLogo.png" width="40" alt="" />
+                        </a>
+                    </div>
+                    <div class="mobile-menu-toggle visible-xs">
+                        <a href="#" data-toggle="mobile-menu">
+                            <i class="fa-bars"></i>
+                        </a>
+                    </div>
+                </header>
+                
+                <ul id="main-menu" class="main-menu">
+                    <li>
+                        <a href="index.html">
+                            <i class="linecons-star"></i>
+                            <span class="title">首页</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="tutorials.html">
+                            <i class="linecons-doc"></i>
+                            <span class="title">教程中心</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 主内容区 -->
+        <div class="main-content">
+            <!-- 顶部导航 -->
+            <nav class="navbar user-info-navbar" role="navigation">
+                <ul class="user-info-menu left-links list-inline list-unstyled">
+                    <li class="hidden-sm hidden-xs">
+                        <a href="#" data-toggle="sidebar">
+                            <i class="fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Hero区域 -->
+            <div class="tutorial-hero">
+                <div class="container">
+                    <h1>AI工具教程中心</h1>
+                    <p>从零基础到精通，系统学习各类AI工具的使用方法</p>
+                </div>
+            </div>
+            
+            <div class="container">
+                <!-- 搜索区域 -->
+                <div class="search-section">
+                    <input type="text" class="search-input" placeholder="搜索教程...例如：ChatGPT提示词、Midjourney风格">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active">全部</button>
+                        <button class="filter-btn">入门教程</button>
+                        <button class="filter-btn">进阶技巧</button>
+                        <button class="filter-btn">实战案例</button>
+                        <button class="filter-btn">视频教程</button>
+                        <button class="filter-btn">最新更新</button>
+                    </div>
+                </div>
+                
+                <!-- 学习路线图 -->
+                <div class="tutorial-roadmap">
+                    <h2 class="roadmap-title">AI工具学习路线图</h2>
+                    <div class="roadmap-steps">
+                        <div class="roadmap-step completed">
+                            <div class="roadmap-step-number">1</div>
+                            <div class="roadmap-step-label">基础概念</div>
+                        </div>
+                        <div class="roadmap-step completed">
+                            <div class="roadmap-step-number">2</div>
+                            <div class="roadmap-step-label">工具入门</div>
+                        </div>
+                        <div class="roadmap-step">
+                            <div class="roadmap-step-number">3</div>
+                            <div class="roadmap-step-label">提示词技巧</div>
+                        </div>
+                        <div class="roadmap-step">
+                            <div class="roadmap-step-number">4</div>
+                            <div class="roadmap-step-label">实战应用</div>
+                        </div>
+                        <div class="roadmap-step">
+                            <div class="roadmap-step-number">5</div>
+                            <div class="roadmap-step-label">高级技巧</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 教程分类 -->
+                <div class="tutorial-categories">
+                    <div class="category-card">
+                        <div class="category-icon">✍️</div>
+                        <h3>AI写作教程</h3>
+                        <p>ChatGPT、Claude等AI写作工具的使用技巧</p>
+                        <div class="tutorial-count">28个教程</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🎨</div>
+                        <h3>AI绘画教程</h3>
+                        <p>Midjourney、DALL-E、SD等图像生成教程</p>
+                        <div class="tutorial-count">35个教程</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🎬</div>
+                        <h3>AI视频教程</h3>
+                        <p>Runway、Pika、Sora等视频生成工具指南</p>
+                        <div class="tutorial-count">18个教程</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🎵</div>
+                        <h3>AI音频教程</h3>
+                        <p>Suno、ElevenLabs等音频生成工具教程</p>
+                        <div class="tutorial-count">12个教程</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">💻</div>
+                        <h3>AI编程教程</h3>
+                        <p>GitHub Copilot、Cursor等AI编程助手使用</p>
+                        <div class="tutorial-count">22个教程</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🚀</div>
+                        <h3>AI效率工具</h3>
+                        <p>Notion AI、办公自动化等效率工具教程</p>
+                        <div class="tutorial-count">15个教程</div>
+                    </div>
+                </div>
+                
+                <!-- 精选教程 -->
+                <div class="featured-tutorials">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>🔥 热门教程推荐</h2>
+                            <a href="#" class="view-all-btn">查看全部 →</a>
+                        </div>
+                        <div class="featured-grid">
+                            <div class="featured-card">
+                                <span class="featured-badge">精选</span>
+                                <h3>ChatGPT提示词工程完全指南</h3>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level level-intermediate">中级</span>
+                                    <span>阅读时间：30分钟</span>
+                                </div>
+                                <p>系统学习如何编写高质量的ChatGPT提示词，包含100+实用模板和技巧，让AI输出质量提升10倍。</p>
+                                <div class="tutorial-tags">
+                                    <span class="tutorial-tag">ChatGPT</span>
+                                    <span class="tutorial-tag">提示词</span>
+                                    <span class="tutorial-tag">实战</span>
+                                </div>
+                            </div>
+                            <div class="featured-card">
+                                <span class="featured-badge">最新</span>
+                                <h3>Midjourney V6完整使用教程</h3>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level level-beginner">初级</span>
+                                    <span>阅读时间：45分钟</span>
+                                </div>
+                                <p>从零开始学习Midjourney V6，包含参数详解、风格控制、高级技巧，配有大量实例和作品展示。</p>
+                                <div class="tutorial-tags">
+                                    <span class="tutorial-tag">Midjourney</span>
+                                    <span class="tutorial-tag">AI绘画</span>
+                                    <span class="tutorial-tag">V6</span>
+                                </div>
+                            </div>
+                            <div class="featured-card">
+                                <span class="featured-badge">热门</span>
+                                <h3>用AI工具打造个人品牌</h3>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level level-advanced">高级</span>
+                                    <span>阅读时间：60分钟</span>
+                                </div>
+                                <p>综合运用ChatGPT、Midjourney、Canva等工具，从内容创作到视觉设计，打造独特的个人品牌。</p>
+                                <div class="tutorial-tags">
+                                    <span class="tutorial-tag">综合应用</span>
+                                    <span class="tutorial-tag">品牌建设</span>
+                                    <span class="tutorial-tag">实战</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ChatGPT教程 -->
+                <div class="tutorial-section">
+                    <div class="section-header">
+                        <h2>📝 ChatGPT使用教程</h2>
+                        <a href="#" class="view-all-btn">查看全部 →</a>
+                    </div>
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <i class="fa fa-play-circle"></i>
+                            </div>
+                            <div class="tutorial-content">
+                                <h3 class="tutorial-title">ChatGPT零基础入门指南</h3>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level level-beginner">初级</span>
+                                    <span>15分钟</span>
+                                </div>
+                                <p class="tutorial-description">从注册账号到基础对话，手把手教你使用ChatGPT，包含常见问题解答。</p>
+                                <div class="tutorial-tags">
+                                    <span class="tutorial-tag">入门</span>
+                                    <span class="tutorial-tag">基础</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <div class="tutorial-content">
+                                <h3 class="tutorial-title">10个让ChatGPT更聪明的技巧</h3>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level level-intermediate">中级</span>
+                                    <span>20分钟</span>
+                                </div>
+                                <p class="tutorial-description">掌握角色扮演、分步思考、few-shot等高级技巧，大幅提升AI回答质量。</p>
+                                <div class="tutorial-tags">
+                                    <span class="tutorial-tag">技巧</span>
+                                    <span class="tutorial-tag">进阶</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <div class="tutorial-content">
+                                <h3 class="tutorial-title">用ChatGPT辅助编程实战</h3>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level level-advanced">高级</span>
+                                    <span>40分钟</span>
+                                </div>
+                                <p class="tutorial-description">学习如何用ChatGPT写代码、调试bug、优化算法，提升编程效率300%。</p>
+                                <div class="tutorial-tags">
+                                    <span class="tutorial-tag">编程</span>
+                                    <span class="tutorial-tag">实战</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Midjourney教程 -->
+                <div class="tutorial-section">
+                    <div class="section-header">
+                        <h2>🎨 Midjourney绘画教程</h2>
+                        <a href="#" class="view-all-btn">查看全部 →</a>
+                    </div>
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <i class="fa fa-paint-brush"></i>
+                            </div>
+                            <div class="tutorial-content">
+                                <h3 class="tutorial-title">Midjourney新手完全指南</h3>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level level-beginner">初级</span>
+                                    <span>25分钟</span>
+                                </div>
+                                <p class="tutorial-description">从Discord注册到生成第一张图，详解Midjourney基础操作和常用参数。</p>
+                                <div class="tutorial-tags">
+                                    <span class="tutorial-tag">入门</span>
+                                    <span class="tutorial-tag">Discord</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <i class="fa fa-magic"></i>
+                            </div>
+                            <div class="tutorial-content">
+                                <h3 class="tutorial-title">掌握Midjourney艺术风格</h3>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level level-intermediate">中级</span>
+                                    <span>35分钟</span>
+                                </div>
+                                <p class="tutorial-description">深入解析20+种艺术风格的提示词写法，从写实到抽象，打造独特视觉。</p>
+                                <div class="tutorial-tags">
+                                    <span class="tutorial-tag">风格</span>
+                                    <span class="tutorial-tag">创意</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <i class="fa fa-camera"></i>
+                            </div>
+                            <div class="tutorial-content">
+                                <h3 class="tutorial-title">商业级产品图生成技巧</h3>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level level-advanced">高级</span>
+                                    <span>50分钟</span>
+                                </div>
+                                <p class="tutorial-description">学习如何用Midjourney生成专业的产品摄影、广告海报、品牌视觉。</p>
+                                <div class="tutorial-tags">
+                                    <span class="tutorial-tag">商业</span>
+                                    <span class="tutorial-tag">产品</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 实战案例 -->
+                <div class="tutorial-section">
+                    <div class="section-header">
+                        <h2>💼 实战项目案例</h2>
+                        <a href="#" class="view-all-btn">查看全部 →</a>
+                    </div>
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+                            <div class="tutorial-content">
+                                <h3 class="tutorial-title">用AI工具创建完整品牌VI</h3>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level level-advanced">高级</span>
+                                    <span>90分钟</span>
+                                </div>
+                                <p class="tutorial-description">从品牌命名到Logo设计，从色彩方案到应用展示，全流程AI辅助品牌创建。</p>
+                                <div class="tutorial-tags">
+                                    <span class="tutorial-tag">品牌</span>
+                                    <span class="tutorial-tag">设计</span>
+                                    <span class="tutorial-tag">综合</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <i class="fa fa-film"></i>
+                            </div>
+                            <div class="tutorial-content">
+                                <h3 class="tutorial-title">AI短视频创作全流程</h3>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level level-intermediate">中级</span>
+                                    <span>60分钟</span>
+                                </div>
+                                <p class="tutorial-description">结合ChatGPT写脚本、Midjourney生成素材、Runway制作视频的完整教程。</p>
+                                <div class="tutorial-tags">
+                                    <span class="tutorial-tag">视频</span>
+                                    <span class="tutorial-tag">创作</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumbnail">
+                                <i class="fa fa-rocket"></i>
+                            </div>
+                            <div class="tutorial-content">
+                                <h3 class="tutorial-title">AI驱动的内容营销策略</h3>
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level level-advanced">高级</span>
+                                    <span>75分钟</span>
+                                </div>
+                                <p class="tutorial-description">打造AI内容生产流水线，实现社交媒体、博客、邮件营销的自动化。</p>
+                                <div class="tutorial-tags">
+                                    <span class="tutorial-tag">营销</span>
+                                    <span class="tutorial-tag">自动化</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 学习资源 -->
+                <div class="tutorial-section">
+                    <div class="section-header">
+                        <h2>📚 学习资源推荐</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">📖 推荐书籍</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>《AI时代的工作革命》</li>
+                                        <li>《提示词工程实战》</li>
+                                        <li>《AIGC创作指南》</li>
+                                        <li>《ChatGPT应用开发》</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">🎥 视频课程</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>AI工具速成班</li>
+                                        <li>Midjourney大师课</li>
+                                        <li>ChatGPT编程实战</li>
+                                        <li>AI创业训练营</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">🔗 社区资源</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>Discord AI社区</li>
+                                        <li>Reddit r/AI</li>
+                                        <li>GitHub AI项目</li>
+                                        <li>知乎AI专栏</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 页脚 -->
+            <footer class="main-footer sticky footer-type-1">
+                <div class="footer-inner">
+                    <div class="footer-text">
+                        &copy; 2025 <strong>AINAV.ART</strong> - AI工具导航专家
+                    </div>
+                    <div class="go-up">
+                        <a href="#" rel="go-top">
+                            <i class="fa-angle-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <!-- 底部脚本 -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/TweenMax.min.js"></script>
+    <script src="../assets/js/resizeable.js"></script>
+    <script src="../assets/js/joinable.js"></script>
+    <script src="../assets/js/xenon-api.js"></script>
+    <script src="../assets/js/xenon-toggles.js"></script>
+    <script src="../assets/js/xenon-custom.js"></script>
+    <script src="../assets/js/user-interaction.js"></script>
+    
+    <script>
+        // 教程筛选功能
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                // 这里可以添加实际的筛选逻辑
+            });
+        });
+        
+        // 搜索功能
+        document.querySelector('.search-input').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            // 这里可以添加实际的搜索逻辑
+        });
+    </script>
+</body>
+</html>
