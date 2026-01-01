@@ -1,29 +1,54 @@
 .box2 {
     height: 86px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 0px 30px 0px 30px;
     background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid #e4ecf3;
+    border: 1px solid rgba(228, 236, 243, 0.8);
     margin: 20px 0 0 0;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 36, 100, 0.06);
+    -webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.box2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .box2:hover {
-    transform: translateY(-6px);
-    -webkit-transform: translateY(-6px);
-    -moz-transform: translateY(-6px);
-    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
-    -webkit-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
-    -moz-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.3);
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    box-shadow: 0 20px 40px -15px rgba(102, 126, 234, 0.35);
+    -webkit-box-shadow: 0 20px 40px -15px rgba(102, 126, 234, 0.35);
+    -moz-box-shadow: 0 20px 40px -15px rgba(102, 126, 234, 0.35);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.box2:hover::before {
+    opacity: 1;
+}
+
+/* 修复导航栏顶部空白问题 - 覆盖Xenon主题JS设置的内联min-height */
+.user-info-navbar .user-info-menu>li {
+    min-height: 0 !important;
+    height: auto !important;
+}
+
+.user-info-navbar {
+    min-height: auto !important;
 }
 
 .xe-comment-entry img {
@@ -32,16 +57,19 @@
     margin-right: 10px;
     vertical-align: middle;
 }
+
 .xe-comment {
     transform: translateY(-50%);
     position: absolute;
     margin-left: 50px;
     top: 50%;
 }
+
 .xe-comment p {
     margin-bottom: 0px;
     margin-right: 15px;
 }
+
 .overflowClip_1 {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -49,6 +77,7 @@
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 }
+
 .overflowClip_2 {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -58,7 +87,7 @@
 }
 
 
-.submit-tag{
+.submit-tag {
     margin-top: 50px;
 
 }
@@ -91,12 +120,12 @@
         width: 35px;
         height: 35px;
     }
-    
+
     .img-circle {
         width: 35px !important;
         height: 35px !important;
     }
-    
+
     .xe-comment {
         margin-left: 45px;
     }
@@ -107,12 +136,12 @@
         width: 30px;
         height: 30px;
     }
-    
+
     .img-circle {
         width: 30px !important;
         height: 30px !important;
     }
-    
+
     .xe-comment {
         margin-left: 40px;
     }

@@ -2177,10 +2177,17 @@
         </div>
     </div>
     <!-- 锚点平滑移动 -->
+    <script src="../assets/js/lozad.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            //img lazy loaded
-            const observer = lozad();
+            //img lazy loaded - 确保带有高级配置
+            const observer = lozad('.lozad', {
+                rootMargin: '200px 0px', // 提前200px开始加载
+                threshold: 0.1,
+                loaded: function (el) {
+                    el.classList.add('loaded');
+                }
+            });
             observer.observe();
 
             $(document).on('click', '.has-sub', function () {
@@ -2248,7 +2255,6 @@
     <script src="../assets/js/xenon-toggles.js"></script>
     <!-- JavaScripts initializations and stuff -->
     <script src="../assets/js/xenon-custom.js"></script>
-    <script src="../assets/js/lozad.js"></script>
     <script src="../language-switcher-fix.js"></script>
 </body>
 
